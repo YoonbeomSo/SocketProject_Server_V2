@@ -16,20 +16,29 @@
      
     ```json
     {
-      "route": " ~~ ",
-      "screenName": " ~~ ",
-      "member": {
+      "route" : "memberForm",
+      "screenName" : "loginForm",
+      "member" : {
+        "mno" :  "data",
+        "id" :  "data",
+        "password" :  "data",
+        "name" :  "data",
+        "mobile" :  "data"
       },
-      "reservation": {
-          ~~~
+      "reservation" : {
+          "data" :  "data",
+          "resPeople" : "data",
+          "stno" :  "data",
+          "mno" : "data"
       },
-      "render": {
-          ~~~
+      "render" : {
+          "1" : "로그인",
+          "2" : "회원가입"
       },
-      "requestParam": {
-          ~~~
+      "requestParam" : {
+          "id" : "admin"
       },
-      "errorMessage": " ~~ "
+      "errorMessage" : "이미 등록된 회원 아이디 입니다."
     }
     ```
     - `route` Client 의 선택에 따라 이후 Server 측에서 route 별로 각각 컨트롤러의 process 실행(다형성) - <u>Client 측에서 생성</u>
