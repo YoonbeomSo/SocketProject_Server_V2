@@ -40,55 +40,53 @@ public class ChatbotServerThread extends Thread {
         try (BufferedReader br = new BufferedReader(new InputStreamReader(socket.getInputStream()));
              PrintWriter pw = new PrintWriter(socket.getOutputStream())) {
 
-            String receivedJsonString = br.readLine();
-            logger.debug("receivedJsonString : {}", receivedJsonString);
-            Gson gson = new Gson();
+            while (true) {
+                String receivedJsonString = br.readLine();
+                logger.debug("receivedJsonString : {}", receivedJsonString);
+                Gson gson = new Gson();
 
-            JsonElement element = JsonParser.parseString(receivedJsonString);
-            if (!element.isJsonObject()) {
-                // TODO 응답값
-                logger.error("올바르지 않은 json 형식 : {}", receivedJsonString);
-                pw.println("올바른 Json 형식이 아닙니다. - " + receivedJsonString);
-                pw.flush();
-                return;
+                JsonElement element = JsonParser.parseString(receivedJsonString);
+                if (!element.isJsonObject()) {
+                    logger.error("올바르지 않은 json 형식 : {}", receivedJsonString);
+                    pw.println("올바른 Json 형식이 아닙니다. - " + receivedJsonString);
+                    pw.flush();
+                    return;
+                }
+
+                // Json 문자열 -> Map
+                Map<String, Object> model = gson.fromJson(receivedJsonString, HashMap.class);
+                model.forEach((key, value) -> logger.debug(key + " : " + value));
+
+                Object route = model.get("route");
+                if (route == null) {
+                    logger.error("route is null");
+                    pw.println("route 값이 없습니다.");
+                    pw.flush();
+                    return;
+                }
+                logger.debug("route : {}", route);
+
+                Controller controller = controllerMap.get((String)route);
+                if (controller == null) {
+                    logger.error("요청 컨트롤러 없음 : {}", route);
+                    pw.println("요청 Controller 가 없습니다. - " + route);
+                    pw.flush();
+                    return;
+                }
+
+                String screenName = controller.process(model);
+                logger.debug("screenName : {}", screenName);
+                model.forEach((key, value) -> logger.debug(key + " : " + value));
+
+                Screen screen = new Screen(screenName);
+                screen.render(model, pw);
             }
 
-            // json 문열 -> Map
-            Map<String, Object> model = gson.fromJson(receivedJsonString, HashMap.class);
-            // Map 출력 Stream 방식도 익혀둘것
-//            for (Map.Entry<String, Object> entry : model.entrySet()) {
-//                System.out.println(entry.getKey() + "=" + entry.getValue());
-//                System.out.println(entry.getValue().getClass().getName());
-//            }
-            model.forEach((key, value) -> logger.debug(key + " : " + value));
-
-
-            Object route = model.get("route");
-            if (route == null) {
-                logger.error("route is null");
-                pw.println("route 값이 없습니다.");
-                pw.flush();
-                return;
-            }
-            logger.debug("route : {}", route);
-
-            Controller controller = controllerMap.get((String)route);
-            if (controller == null) {
-                // TODO 응답값
-                logger.error("요청 컨트롤러 없음 : {}", route);
-                pw.println("요청 Controller 가 없습니다. - " + route);
-                pw.flush();
-                return;
-            }
-
-            String screenName = controller.process(model);
-            logger.debug("screenName : {}", screenName);
-
-            Screen screen = new Screen(screenName);
-            screen.render(model, pw);
 
         } catch (IOException e) {
             e.printStackTrace();
+        } finally {
+            System.out.println("쓰레드 끝남..");
         }
 
 

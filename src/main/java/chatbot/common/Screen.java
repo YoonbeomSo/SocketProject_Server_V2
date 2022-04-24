@@ -11,7 +11,7 @@ public class Screen {
 
     private static final Logger logger = LogManager.getLogger(Screen.class);
 
-    private final String screenName;
+    private String screenName;
 
     public Screen(String screenName) {
         this.screenName = screenName;
