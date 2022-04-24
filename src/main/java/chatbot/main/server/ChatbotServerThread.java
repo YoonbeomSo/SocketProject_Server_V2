@@ -63,10 +63,16 @@ public class ChatbotServerThread extends Thread {
             model.forEach((key, value) -> logger.debug(key + " : " + value));
 
 
-            String route = (String) model.get("route");
+            Object route = model.get("route");
+            if (route == null) {
+                logger.error("route is null");
+                pw.println("route 값이 없습니다.");
+                pw.flush();
+                return;
+            }
             logger.debug("route : {}", route);
 
-            Controller controller = controllerMap.get(route);
+            Controller controller = controllerMap.get((String)route);
             if (controller == null) {
                 // TODO 응답값
                 logger.error("요청 컨트롤러 없음 : {}", route);

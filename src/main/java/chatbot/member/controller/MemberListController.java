@@ -8,7 +8,7 @@ public class MemberListController implements Controller {
 
     @Override
     public String process(Map<String, Object> model) {
-        return "리스트로 가라";
+        return "memberList";
     }
 
 }

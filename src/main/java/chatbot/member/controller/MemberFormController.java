@@ -13,7 +13,7 @@ public class MemberFormController implements Controller {
 //            System.out.println(entry.getKey() + "=" + entry.getValue());
 //            System.out.println(entry.getValue().getClass().getName());
 //        }
-        return "폼으로 가라";
+        return "loginForm";
     }
 
 }
