@@ -27,15 +27,20 @@ public class ChatbotServerThread extends Thread {
     public ChatbotServerThread(Socket socket) {
         this.socket = socket;
 
+        // 클라이언트가 처음 접속했을 때
         controllerMap.put("memberForm", new MemberFormController());
+        // 클라이언트가 1. 로그인 2. 회원가입 목록에서 1번을 선택했을 때
         controllerMap.put("memberLoginForm", new MemberLoginFormController());
-
+        // 클라이언트가 1. 로그인 2. 회원가입 목록에서 2번을 선택했을 때
         controllerMap.put("memberJoinForm", new MemberJoinFormController());
+
+        // 클라이언트가 회원가입 진행 시
+        // 1. 아이디, 2. 비밀번호, 3. 이름, 4. 핸드폰번호 차례로 입력 했을 때
         controllerMap.put("memberJoin", new MemberJoinController());
 
-
+        // TODO 클라이언트가 로그인 진행 시
         controllerMap.put("memberLogin", new MemberLoginController());
-        controllerMap.put("memberSave", new MemberSaveController());
+
     }
 
     @Override
@@ -46,13 +51,11 @@ public class ChatbotServerThread extends Thread {
 
             while (true) {
                 String receivedJsonString = br.readLine();
-                System.out.println("ChatbotServerThread.run");
                 logger.debug("receivedJsonString : {}", receivedJsonString);
                 Gson gson = new Gson();
 
                 JsonElement element = JsonParser.parseString(receivedJsonString);
                 if (!element.isJsonObject()) {
-                    System.out.println("ChatbotServerThread.run");
                     logger.error("올바르지 않은 json 형식 : {}", receivedJsonString);
                     pw.println("올바른 Json 형식이 아닙니다. - " + receivedJsonString);
                     pw.flush();
@@ -81,7 +84,6 @@ public class ChatbotServerThread extends Thread {
                 }
 
                 String screenName = controller.process(model);
-                System.out.println("ChatbotServerThread.run");
                 logger.debug("screenName : {}", screenName);
                 model.forEach((key, value) -> logger.debug(key + " : " + value));
 

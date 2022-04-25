@@ -19,7 +19,6 @@ public class Screen {
 
     public void render(Map<String, Object> model, PrintWriter pw){
         String responseData = modelToJsonString(model);
-        System.out.println("Screen.render");
         logger.debug("responseData : {}", responseData);
         pw.println(responseData);
         pw.flush();
