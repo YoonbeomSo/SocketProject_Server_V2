@@ -1,18 +1,18 @@
 package chatbot.common;
 
 import chatbot.member.dto.MemberDTO;
-import chatbot.reservation.dto.ReservationDTO;
+import chatbot.reservation.dto.ReservationInfoDTO;
 
 public class ModuleSingleTonDTO {
     private MemberDTO memberDto = new MemberDTO();
-    private ReservationDTO reservationDto = new ReservationDTO();
+    private ReservationInfoDTO reservationDto = new ReservationInfoDTO();
 
 
     public void setMemberDto(MemberDTO memberDto) {
         this.memberDto = memberDto;
     }
 
-    public void setReservationDto(ReservationDTO reservationDto) {
+    public void setReservationDto(ReservationInfoDTO reservationDto) {
         this.reservationDto = reservationDto;
     }
 
@@ -20,7 +20,7 @@ public class ModuleSingleTonDTO {
         return memberDto;
     }
 
-    public ReservationDTO getReservationDto() {
+    public ReservationInfoDTO getReservationDto() {
         return reservationDto;
     }
 }
