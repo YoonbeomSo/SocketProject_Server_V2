@@ -3,7 +3,8 @@ package chatbot.main.server;
 import chatbot.common.Screen;
 import chatbot.main.controller.Controller;
 import chatbot.member.controller.MemberFormController;
-import chatbot.member.controller.MemberListController;
+import chatbot.member.controller.MemberLoginController;
+import chatbot.member.controller.MemberLoginFormController;
 import chatbot.member.controller.MemberSaveController;
 import com.google.gson.Gson;
 import com.google.gson.JsonElement;
@@ -30,7 +31,8 @@ public class ChatbotServerThread extends Thread {
         this.socket = socket;
 
         controllerMap.put("memberForm", new MemberFormController());
-        controllerMap.put("memberList", new MemberListController());
+        controllerMap.put("memberLoginForm", new MemberLoginFormController());
+        controllerMap.put("memberLogin", new MemberLoginController());
         controllerMap.put("memberSave", new MemberSaveController());
     }
 
