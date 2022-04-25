@@ -1,8 +1,8 @@
-package chatbot.member.repository;
+package chatbot.member.dao;
 
 import chatbot.member.dto.MemberDTO;
 
-public interface Repository {
+public interface Dao {
 
     void save(MemberDTO member);
 

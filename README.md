@@ -38,7 +38,8 @@
       "requestParam" : {
           "id" : "admin"
       },
-      "errorMessage" : "이미 등록된 회원 아이디 입니다."
+      "errorMessage" : "이미 등록된 회원 아이디 입니다.",
+      "successMessage" : "회원 가입이 완료되었습니다."
     }
     ```
     - `route` Client 의 선택에 따라 이후 Server 측에서 route 별로 각각 컨트롤러의 process 실행(다형성) - <u>Client 측에서 생성</u>

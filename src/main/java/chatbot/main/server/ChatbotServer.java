@@ -17,7 +17,7 @@ public class ChatbotServer {
         this.PORT = PORT;
     }
 
-    void start(){
+    void start() {
 
         try {
             ServerSocket serverSocket = new ServerSocket(this.PORT);

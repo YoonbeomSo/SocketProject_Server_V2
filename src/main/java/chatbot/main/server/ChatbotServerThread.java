@@ -2,10 +2,7 @@ package chatbot.main.server;
 
 import chatbot.common.Screen;
 import chatbot.main.controller.Controller;
-import chatbot.member.controller.MemberFormController;
-import chatbot.member.controller.MemberLoginController;
-import chatbot.member.controller.MemberLoginFormController;
-import chatbot.member.controller.MemberSaveController;
+import chatbot.member.controller.*;
 import com.google.gson.Gson;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonParser;
@@ -32,6 +29,11 @@ public class ChatbotServerThread extends Thread {
 
         controllerMap.put("memberForm", new MemberFormController());
         controllerMap.put("memberLoginForm", new MemberLoginFormController());
+
+        controllerMap.put("memberJoinForm", new MemberJoinFormController());
+        controllerMap.put("memberJoin", new MemberJoinController());
+
+
         controllerMap.put("memberLogin", new MemberLoginController());
         controllerMap.put("memberSave", new MemberSaveController());
     }
@@ -44,11 +46,13 @@ public class ChatbotServerThread extends Thread {
 
             while (true) {
                 String receivedJsonString = br.readLine();
+                System.out.println("ChatbotServerThread.run");
                 logger.debug("receivedJsonString : {}", receivedJsonString);
                 Gson gson = new Gson();
 
                 JsonElement element = JsonParser.parseString(receivedJsonString);
                 if (!element.isJsonObject()) {
+                    System.out.println("ChatbotServerThread.run");
                     logger.error("올바르지 않은 json 형식 : {}", receivedJsonString);
                     pw.println("올바른 Json 형식이 아닙니다. - " + receivedJsonString);
                     pw.flush();
@@ -77,6 +81,7 @@ public class ChatbotServerThread extends Thread {
                 }
 
                 String screenName = controller.process(model);
+                System.out.println("ChatbotServerThread.run");
                 logger.debug("screenName : {}", screenName);
                 model.forEach((key, value) -> logger.debug(key + " : " + value));
 
