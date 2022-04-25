@@ -3,6 +3,8 @@ package chatbot.main.server;
 import chatbot.common.Screen;
 import chatbot.main.controller.Controller;
 import chatbot.member.controller.*;
+import chatbot.reservation.controller.ReservationFormController;
+import chatbot.reservation.controller.ReservationListController;
 import com.google.gson.Gson;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonParser;
@@ -38,11 +40,14 @@ public class ChatbotServerThread extends Thread {
         // 1. 아이디, 2. 비밀번호, 3. 이름, 4. 핸드폰번호 차례로 입력 했을 때
         controllerMap.put("memberJoin", new MemberJoinController());
 
-        // TODO 클라이언트가 로그인 진행 시
+        // TODO 클라이언트가 로그인 진행 시 로그인 로직 처리해야 함
         controllerMap.put("memberLogin", new MemberLoginController());
 
 
-        controllerMap.put("reservationForm", new ReservationListController());
+        // 클라이언트 로그인 완료 시 식당목록 보여줌
+        controllerMap.put("reservationForm", new ReservationFormController());
+
+        // 클라이언트가 식당 선택 시 시간 및 인원 보여줌
         controllerMap.put("reservationList", new ReservationListController());
     }
 
