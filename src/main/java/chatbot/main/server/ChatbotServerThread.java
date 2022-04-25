@@ -41,6 +41,9 @@ public class ChatbotServerThread extends Thread {
         // TODO 클라이언트가 로그인 진행 시
         controllerMap.put("memberLogin", new MemberLoginController());
 
+
+        controllerMap.put("reservationForm", new ReservationListController());
+        controllerMap.put("reservationList", new ReservationListController());
     }
 
     @Override
@@ -51,11 +54,13 @@ public class ChatbotServerThread extends Thread {
 
             while (true) {
                 String receivedJsonString = br.readLine();
+                System.out.println("ChatbotServerThread.run");
                 logger.debug("receivedJsonString : {}", receivedJsonString);
                 Gson gson = new Gson();
 
                 JsonElement element = JsonParser.parseString(receivedJsonString);
                 if (!element.isJsonObject()) {
+                    System.out.println("ChatbotServerThread.run");
                     logger.error("올바르지 않은 json 형식 : {}", receivedJsonString);
                     pw.println("올바른 Json 형식이 아닙니다. - " + receivedJsonString);
                     pw.flush();
@@ -84,6 +89,7 @@ public class ChatbotServerThread extends Thread {
                 }
 
                 String screenName = controller.process(model);
+                System.out.println("ChatbotServerThread.run");
                 logger.debug("screenName : {}", screenName);
                 model.forEach((key, value) -> logger.debug(key + " : " + value));
 
