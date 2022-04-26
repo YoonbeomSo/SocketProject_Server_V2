@@ -100,4 +100,21 @@ public class StoreDAO {
         }
         return message;
     }
+
+    public boolean findOneStore(String stName) {
+        Connection conn = db.getConnection();
+        ResultSet rs = null;
+        Map<String, String> storeList = null;
+        try{
+            Statement statement = conn.createStatement();
+            rs = statement.executeQuery("select stname from store where stname=" + stName);
+            rs.close();
+            conn.close();
+        } catch (SQLException e) {
+            System.out.println("findone 오류");
+            e.printStackTrace();
+            return true;
+        }
+        return false;
+    }
 }
