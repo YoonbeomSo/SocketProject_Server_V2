@@ -142,7 +142,7 @@ public class ReservationDAO {
 
     public int insertResInfo(String mno, String stno, String resPeople, String sqlDate) {
         AbleInfoDTO ableDto = new AbleInfoDTO();
-        sql ="INSERT INTO RESERVATIONINFO VALUES(?,?,?,?,RESERVATION_RESNO_SEQ.nextval)";
+        sql ="INSERT INTO RESERVATIONINFO VALUES(RESERVATION_RESNO_SEQ.nextval,?,?,?,?)";
         int result = 0;
         try {
             ps = con.prepareStatement(sql);
