@@ -1,0 +1,515 @@
+2022/04/26 11:41:06,287 [DEBUG]  [                   chatbot.common.Screen] [ Thread-0]- responseData : {"route":"lookStore","screenName":"lookStore","requestParam":{"11":"13","10":"11"},"render":{"22":"tes11","12":"BBQ 강남점","23":"ee","13":"돈까스","24":"oooo","25":"eoeoeo","15":"냉면","26":"dlkdl","1":"한돈애","2":"숯불애","3":"하나우동","4":"초선과여포","5":"통닭"},"requestStName":"dlkdl"}
+2022/04/26 11:42:10,813 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- receivedJsonString : {"route":"adminForm","screenName":"lookStore","requestParam":{"11":"13","10":"11"},"render":{"22":"tes11","12":"BBQ 강남점","23":"ee","13":"돈까스","24":"oooo","25":"eoeoeo","15":"냉면","26":"dlkdl","1":"한돈애","2":"숯불애","3":"하나우동","4":"초선과여포","5":"통닭"},"requestStName":"dlkdl"}
+2022/04/26 11:42:10,813 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- route : adminForm
+2022/04/26 11:42:10,813 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- screenName : lookStore
+2022/04/26 11:42:10,813 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- requestParam : {11=13, 10=11}
+2022/04/26 11:42:10,813 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- render : {22=tes11, 12=BBQ 강남점, 23=ee, 13=돈까스, 24=oooo, 25=eoeoeo, 15=냉면, 26=dlkdl, 1=한돈애, 2=숯불애, 3=하나우동, 4=초선과여포, 5=통닭}
+2022/04/26 11:42:10,813 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- requestStName : dlkdl
+2022/04/26 11:42:10,813 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- route : adminForm
+2022/04/26 11:42:10,813 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- screenName : adminForm
+2022/04/26 11:42:10,829 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- route : adminForm
+2022/04/26 11:42:10,829 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- screenName : lookStore
+2022/04/26 11:42:10,829 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- requestParam : {11=13, 10=11}
+2022/04/26 11:42:10,829 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- render : {1=제휴가게 조회, 2=제휴가게 추가, 3=제휴가게 삭제, 4=종료}
+2022/04/26 11:42:10,829 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- requestStName : dlkdl
+2022/04/26 11:42:10,829 [DEBUG]  [                   chatbot.common.Screen] [ Thread-0]- responseData : {"route":"adminForm","screenName":"adminForm","requestParam":{"11":"13","10":"11"},"render":{"1":"제휴가게 조회","2":"제휴가게 추가","3":"제휴가게 삭제","4":"종료"},"requestStName":"dlkdl"}
+2022/04/26 12:27:37,253 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- receivedJsonString : {"route":"exit","errorMessage":"번호를 다시 입력해주세요.","screenName":"adminForm","requestParam":{"11":"13","10":"11"},"render":{"1":"제휴가게 조회","2":"제휴가게 추가","3":"제휴가게 삭제","4":"종료"},"requestStName":"dlkdl"}
+2022/04/26 12:27:37,269 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- route : exit
+2022/04/26 12:27:37,269 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- errorMessage : 번호를 다시 입력해주세요.
+2022/04/26 12:27:37,269 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- screenName : adminForm
+2022/04/26 12:27:37,269 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- requestParam : {11=13, 10=11}
+2022/04/26 12:27:37,269 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- render : {1=제휴가게 조회, 2=제휴가게 추가, 3=제휴가게 삭제, 4=종료}
+2022/04/26 12:27:37,269 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- requestStName : dlkdl
+2022/04/26 12:27:37,269 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- route : exit
+2022/04/26 12:27:37,269 [ERROR]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- 요청 컨트롤러 없음 : exit
+2022/04/26 12:41:15,539 [INFO ]  [       chatbot.main.server.ChatbotServer] [     main]- Connect 127.0.0.1
+2022/04/26 12:41:15,664 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- receivedJsonString : {"route":"adminForm"}
+2022/04/26 12:41:15,711 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- route : adminForm
+2022/04/26 12:41:15,711 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- route : adminForm
+2022/04/26 12:41:15,711 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- screenName : adminForm
+2022/04/26 12:41:15,711 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- route : adminForm
+2022/04/26 12:41:15,711 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- render : {1=제휴가게 조회, 2=제휴가게 추가, 3=제휴가게 삭제, 4=종료}
+2022/04/26 12:41:15,711 [DEBUG]  [                   chatbot.common.Screen] [ Thread-0]- responseData : {"route":"adminForm","screenName":"adminForm","render":{"1":"제휴가게 조회","2":"제휴가게 추가","3":"제휴가게 삭제","4":"종료"}}
+2022/04/26 12:41:19,424 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- receivedJsonString : {"route":"lookStore","screenName":"adminForm","render":{"1":"제휴가게 조회","2":"제휴가게 추가","3":"제휴가게 삭제","4":"종료"}}
+2022/04/26 12:41:19,424 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- route : lookStore
+2022/04/26 12:41:19,424 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- screenName : adminForm
+2022/04/26 12:41:19,439 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- render : {1=제휴가게 조회, 2=제휴가게 추가, 3=제휴가게 삭제, 4=종료}
+2022/04/26 12:41:19,439 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- route : lookStore
+2022/04/26 12:41:20,001 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- screenName : lookStore
+2022/04/26 12:41:20,001 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- route : lookStore
+2022/04/26 12:41:20,001 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- screenName : adminForm
+2022/04/26 12:41:20,001 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- render : {1=한돈애, 2=숯불애, 3=하나우동, 4=초선과여포, 5=통닭}
+2022/04/26 12:41:20,001 [DEBUG]  [                   chatbot.common.Screen] [ Thread-0]- responseData : {"route":"lookStore","screenName":"lookStore","render":{"1":"한돈애","2":"숯불애","3":"하나우동","4":"초선과여포","5":"통닭"}}
+2022/04/26 12:41:26,531 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- receivedJsonString : {"route":"adminForm","screenName":"lookStore","render":{"1":"한돈애","2":"숯불애","3":"하나우동","4":"초선과여포","5":"통닭"}}
+2022/04/26 12:41:26,531 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- route : adminForm
+2022/04/26 12:41:26,531 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- screenName : lookStore
+2022/04/26 12:41:26,531 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- render : {1=한돈애, 2=숯불애, 3=하나우동, 4=초선과여포, 5=통닭}
+2022/04/26 12:41:26,531 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- route : adminForm
+2022/04/26 12:41:26,531 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- screenName : adminForm
+2022/04/26 12:41:26,531 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- route : adminForm
+2022/04/26 12:41:26,531 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- screenName : lookStore
+2022/04/26 12:41:26,531 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- render : {1=제휴가게 조회, 2=제휴가게 추가, 3=제휴가게 삭제, 4=종료}
+2022/04/26 12:41:26,531 [DEBUG]  [                   chatbot.common.Screen] [ Thread-0]- responseData : {"route":"adminForm","screenName":"adminForm","render":{"1":"제휴가게 조회","2":"제휴가게 추가","3":"제휴가게 삭제","4":"종료"}}
+2022/04/26 12:41:29,577 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- receivedJsonString : {"route":"deleteStoreForm","screenName":"adminForm","render":{"1":"제휴가게 조회","2":"제휴가게 추가","3":"제휴가게 삭제","4":"종료"}}
+2022/04/26 12:41:29,577 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- route : deleteStoreForm
+2022/04/26 12:41:29,577 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- screenName : adminForm
+2022/04/26 12:41:29,577 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- render : {1=제휴가게 조회, 2=제휴가게 추가, 3=제휴가게 삭제, 4=종료}
+2022/04/26 12:41:29,577 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- route : deleteStoreForm
+2022/04/26 12:41:29,577 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- screenName : deleteStoreForm
+2022/04/26 12:41:29,577 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- route : deleteStoreForm
+2022/04/26 12:41:29,577 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- screenName : adminForm
+2022/04/26 12:41:29,577 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- render : 삭제할 가게번호를 입력해주세요.
+2022/04/26 12:41:29,577 [DEBUG]  [                   chatbot.common.Screen] [ Thread-0]- responseData : {"route":"deleteStoreForm","screenName":"deleteStoreForm","render":"삭제할 가게번호를 입력해주세요."}
+2022/04/26 12:41:35,649 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- receivedJsonString : {"route":"deleteStore","screenName":"deleteStoreForm","requestParam":"5","render":"삭제할 가게번호를 입력해주세요."}
+2022/04/26 12:41:35,649 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- route : deleteStore
+2022/04/26 12:41:35,649 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- screenName : deleteStoreForm
+2022/04/26 12:41:35,649 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- requestParam : 5
+2022/04/26 12:41:35,649 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- render : 삭제할 가게번호를 입력해주세요.
+2022/04/26 12:41:35,649 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- route : deleteStore
+2022/04/26 12:41:35,711 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- screenName : deleteStoreResult
+2022/04/26 12:41:35,711 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- route : deleteStore
+2022/04/26 12:41:35,711 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- screenName : deleteStoreForm
+2022/04/26 12:41:35,711 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- requestParam : 5
+2022/04/26 12:41:35,711 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- render : 가게고유번호 5 정보가 삭제되었습니다.
+2022/04/26 12:41:35,711 [DEBUG]  [                   chatbot.common.Screen] [ Thread-0]- responseData : {"route":"deleteStore","screenName":"deleteStoreResult","requestParam":"5","render":"가게고유번호 5 정보가 삭제되었습니다."}
+2022/04/26 12:41:35,711 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- receivedJsonString : null
+2022/04/26 12:43:51,756 [INFO ]  [       chatbot.main.server.ChatbotServer] [     main]- Connect 127.0.0.1
+2022/04/26 12:43:51,866 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- receivedJsonString : {"route":"adminForm"}
+2022/04/26 12:43:51,928 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- route : adminForm
+2022/04/26 12:43:51,928 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- route : adminForm
+2022/04/26 12:43:51,928 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- screenName : adminForm
+2022/04/26 12:43:51,928 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- route : adminForm
+2022/04/26 12:43:51,928 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- render : {1=제휴가게 조회, 2=제휴가게 추가, 3=제휴가게 삭제, 4=종료}
+2022/04/26 12:43:51,928 [DEBUG]  [                   chatbot.common.Screen] [ Thread-0]- responseData : {"route":"adminForm","screenName":"adminForm","render":{"1":"제휴가게 조회","2":"제휴가게 추가","3":"제휴가게 삭제","4":"종료"}}
+2022/04/26 12:43:56,661 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- receivedJsonString : {"route":"deleteStoreForm","screenName":"adminForm","render":{"1":"제휴가게 조회","2":"제휴가게 추가","3":"제휴가게 삭제","4":"종료"}}
+2022/04/26 12:43:56,661 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- route : deleteStoreForm
+2022/04/26 12:43:56,661 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- screenName : adminForm
+2022/04/26 12:43:56,677 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- render : {1=제휴가게 조회, 2=제휴가게 추가, 3=제휴가게 삭제, 4=종료}
+2022/04/26 12:43:56,677 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- route : deleteStoreForm
+2022/04/26 12:43:56,677 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- screenName : deleteStoreForm
+2022/04/26 12:43:56,677 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- route : deleteStoreForm
+2022/04/26 12:43:56,677 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- screenName : adminForm
+2022/04/26 12:43:56,677 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- render : 삭제할 가게번호를 입력해주세요.
+2022/04/26 12:43:56,677 [DEBUG]  [                   chatbot.common.Screen] [ Thread-0]- responseData : {"route":"deleteStoreForm","screenName":"deleteStoreForm","render":"삭제할 가게번호를 입력해주세요."}
+2022/04/26 12:44:15,913 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- receivedJsonString : {"route":"deleteStore","screenName":"deleteStoreForm","requestParam":"2","render":"삭제할 가게번호를 입력해주세요."}
+2022/04/26 12:44:15,913 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- route : deleteStore
+2022/04/26 12:44:15,913 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- screenName : deleteStoreForm
+2022/04/26 12:44:15,913 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- requestParam : 2
+2022/04/26 12:44:15,913 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- render : 삭제할 가게번호를 입력해주세요.
+2022/04/26 12:44:15,913 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- route : deleteStore
+2022/04/26 12:44:16,413 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- screenName : deleteStoreResult
+2022/04/26 12:44:16,413 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- route : deleteStore
+2022/04/26 12:44:16,413 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- screenName : deleteStoreForm
+2022/04/26 12:44:16,413 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- requestParam : 2
+2022/04/26 12:44:16,413 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- render : 가게고유번호 2 정보가 삭제되었습니다.
+2022/04/26 12:44:16,413 [DEBUG]  [                   chatbot.common.Screen] [ Thread-0]- responseData : {"route":"deleteStore","screenName":"deleteStoreResult","requestParam":"2","render":"가게고유번호 2 정보가 삭제되었습니다."}
+2022/04/26 12:44:16,413 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- receivedJsonString : {"route":"adminForm","screenName":"deleteStoreResult","requestParam":"2","render":"가게고유번호 2 정보가 삭제되었습니다."}
+2022/04/26 12:44:16,413 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- route : adminForm
+2022/04/26 12:44:16,413 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- screenName : deleteStoreResult
+2022/04/26 12:44:16,413 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- requestParam : 2
+2022/04/26 12:44:16,413 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- render : 가게고유번호 2 정보가 삭제되었습니다.
+2022/04/26 12:44:16,429 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- route : adminForm
+2022/04/26 12:44:16,429 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- screenName : adminForm
+2022/04/26 12:44:16,429 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- route : adminForm
+2022/04/26 12:44:16,429 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- screenName : deleteStoreResult
+2022/04/26 12:44:16,429 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- requestParam : 2
+2022/04/26 12:44:16,429 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- render : {1=제휴가게 조회, 2=제휴가게 추가, 3=제휴가게 삭제, 4=종료}
+2022/04/26 12:44:16,429 [DEBUG]  [                   chatbot.common.Screen] [ Thread-0]- responseData : {"route":"adminForm","screenName":"adminForm","requestParam":"2","render":{"1":"제휴가게 조회","2":"제휴가게 추가","3":"제휴가게 삭제","4":"종료"}}
+2022/04/26 12:44:56,434 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- receivedJsonString : {"route":"deleteStoreForm","errorMessage":"번호를 다시 입력해주세요.","screenName":"adminForm","requestParam":"2","render":{"1":"제휴가게 조회","2":"제휴가게 추가","3":"제휴가게 삭제","4":"종료"}}
+2022/04/26 12:44:56,434 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- route : deleteStoreForm
+2022/04/26 12:44:56,434 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- errorMessage : 번호를 다시 입력해주세요.
+2022/04/26 12:44:56,434 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- screenName : adminForm
+2022/04/26 12:44:56,434 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- requestParam : 2
+2022/04/26 12:44:56,434 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- render : {1=제휴가게 조회, 2=제휴가게 추가, 3=제휴가게 삭제, 4=종료}
+2022/04/26 12:44:56,434 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- route : deleteStoreForm
+2022/04/26 12:44:56,434 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- screenName : deleteStoreForm
+2022/04/26 12:44:56,434 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- route : deleteStoreForm
+2022/04/26 12:44:56,434 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- errorMessage : 번호를 다시 입력해주세요.
+2022/04/26 12:44:56,434 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- screenName : adminForm
+2022/04/26 12:44:56,434 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- requestParam : 2
+2022/04/26 12:44:56,434 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- render : 삭제할 가게번호를 입력해주세요.
+2022/04/26 12:44:56,449 [DEBUG]  [                   chatbot.common.Screen] [ Thread-0]- responseData : {"route":"deleteStoreForm","errorMessage":"번호를 다시 입력해주세요.","screenName":"deleteStoreForm","requestParam":"2","render":"삭제할 가게번호를 입력해주세요."}
+2022/04/26 12:44:58,465 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- receivedJsonString : {"route":"deleteStore","errorMessage":"번호를 다시 입력해주세요.","screenName":"deleteStoreForm","requestParam":"1","render":"삭제할 가게번호를 입력해주세요."}
+2022/04/26 12:44:58,465 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- route : deleteStore
+2022/04/26 12:44:58,465 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- errorMessage : 번호를 다시 입력해주세요.
+2022/04/26 12:44:58,465 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- screenName : deleteStoreForm
+2022/04/26 12:44:58,465 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- requestParam : 1
+2022/04/26 12:44:58,465 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- render : 삭제할 가게번호를 입력해주세요.
+2022/04/26 12:44:58,465 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- route : deleteStore
+2022/04/26 12:44:58,527 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- screenName : deleteStoreResult
+2022/04/26 12:44:58,527 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- route : deleteStore
+2022/04/26 12:44:58,527 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- errorMessage : 번호를 다시 입력해주세요.
+2022/04/26 12:44:58,527 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- screenName : deleteStoreForm
+2022/04/26 12:44:58,527 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- requestParam : 1
+2022/04/26 12:44:58,543 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- render : 가게고유번호 1 정보가 삭제되었습니다.
+2022/04/26 12:44:58,543 [DEBUG]  [                   chatbot.common.Screen] [ Thread-0]- responseData : {"route":"deleteStore","errorMessage":"번호를 다시 입력해주세요.","screenName":"deleteStoreResult","requestParam":"1","render":"가게고유번호 1 정보가 삭제되었습니다."}
+2022/04/26 12:44:58,543 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- receivedJsonString : {"route":"adminForm","errorMessage":"번호를 다시 입력해주세요.","screenName":"deleteStoreResult","requestParam":"1","render":"가게고유번호 1 정보가 삭제되었습니다."}
+2022/04/26 12:44:58,543 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- route : adminForm
+2022/04/26 12:44:58,543 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- errorMessage : 번호를 다시 입력해주세요.
+2022/04/26 12:44:58,543 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- screenName : deleteStoreResult
+2022/04/26 12:44:58,543 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- requestParam : 1
+2022/04/26 12:44:58,543 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- render : 가게고유번호 1 정보가 삭제되었습니다.
+2022/04/26 12:44:58,543 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- route : adminForm
+2022/04/26 12:44:58,543 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- screenName : adminForm
+2022/04/26 12:44:58,543 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- route : adminForm
+2022/04/26 12:44:58,543 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- errorMessage : 번호를 다시 입력해주세요.
+2022/04/26 12:44:58,543 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- screenName : deleteStoreResult
+2022/04/26 12:44:58,543 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- requestParam : 1
+2022/04/26 12:44:58,543 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- render : {1=제휴가게 조회, 2=제휴가게 추가, 3=제휴가게 삭제, 4=종료}
+2022/04/26 12:44:58,543 [DEBUG]  [                   chatbot.common.Screen] [ Thread-0]- responseData : {"route":"adminForm","errorMessage":"번호를 다시 입력해주세요.","screenName":"adminForm","requestParam":"1","render":{"1":"제휴가게 조회","2":"제휴가게 추가","3":"제휴가게 삭제","4":"종료"}}
+2022/04/26 12:45:19,677 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- receivedJsonString : {"route":"lookStore","errorMessage":"번호를 다시 입력해주세요.","screenName":"adminForm","requestParam":"1","render":{"1":"제휴가게 조회","2":"제휴가게 추가","3":"제휴가게 삭제","4":"종료"}}
+2022/04/26 12:45:19,677 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- route : lookStore
+2022/04/26 12:45:19,677 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- errorMessage : 번호를 다시 입력해주세요.
+2022/04/26 12:45:19,677 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- screenName : adminForm
+2022/04/26 12:45:19,677 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- requestParam : 1
+2022/04/26 12:45:19,677 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- render : {1=제휴가게 조회, 2=제휴가게 추가, 3=제휴가게 삭제, 4=종료}
+2022/04/26 12:45:19,677 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- route : lookStore
+2022/04/26 12:45:19,787 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- screenName : lookStore
+2022/04/26 12:45:19,787 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- route : lookStore
+2022/04/26 12:45:19,787 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- errorMessage : 번호를 다시 입력해주세요.
+2022/04/26 12:45:19,787 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- screenName : adminForm
+2022/04/26 12:45:19,787 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- requestParam : 1
+2022/04/26 12:45:19,787 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- render : {3=하나우동, 4=초선과여포}
+2022/04/26 12:45:19,787 [DEBUG]  [                   chatbot.common.Screen] [ Thread-0]- responseData : {"route":"lookStore","errorMessage":"번호를 다시 입력해주세요.","screenName":"lookStore","requestParam":"1","render":{"3":"하나우동","4":"초선과여포"}}
+2022/04/26 12:46:33,690 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- receivedJsonString : {"route":"adminForm","errorMessage":"번호를 다시 입력해주세요.","screenName":"lookStore","requestParam":"1","render":{"3":"하나우동","4":"초선과여포"}}
+2022/04/26 12:46:33,690 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- route : adminForm
+2022/04/26 12:46:33,690 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- errorMessage : 번호를 다시 입력해주세요.
+2022/04/26 12:46:33,690 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- screenName : lookStore
+2022/04/26 12:46:33,690 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- requestParam : 1
+2022/04/26 12:46:33,690 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- render : {3=하나우동, 4=초선과여포}
+2022/04/26 12:46:33,690 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- route : adminForm
+2022/04/26 12:46:33,690 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- screenName : adminForm
+2022/04/26 12:46:33,690 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- route : adminForm
+2022/04/26 12:46:33,690 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- errorMessage : 번호를 다시 입력해주세요.
+2022/04/26 12:46:33,690 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- screenName : lookStore
+2022/04/26 12:46:33,690 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- requestParam : 1
+2022/04/26 12:46:33,690 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- render : {1=제휴가게 조회, 2=제휴가게 추가, 3=제휴가게 삭제, 4=종료}
+2022/04/26 12:46:33,690 [DEBUG]  [                   chatbot.common.Screen] [ Thread-0]- responseData : {"route":"adminForm","errorMessage":"번호를 다시 입력해주세요.","screenName":"adminForm","requestParam":"1","render":{"1":"제휴가게 조회","2":"제휴가게 추가","3":"제휴가게 삭제","4":"종료"}}
+2022/04/26 12:46:41,367 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- receivedJsonString : null
+2022/04/26 12:46:41,989 [INFO ]  [       chatbot.main.server.ChatbotServer] [     main]- Connect 127.0.0.1
+2022/04/26 12:46:42,130 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-2]- receivedJsonString : {"route":"adminForm"}
+2022/04/26 12:46:42,130 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-2]- route : adminForm
+2022/04/26 12:46:42,130 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-2]- route : adminForm
+2022/04/26 12:46:42,130 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-2]- screenName : adminForm
+2022/04/26 12:46:42,130 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-2]- route : adminForm
+2022/04/26 12:46:42,130 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-2]- render : {1=제휴가게 조회, 2=제휴가게 추가, 3=제휴가게 삭제, 4=종료}
+2022/04/26 12:46:42,130 [DEBUG]  [                   chatbot.common.Screen] [ Thread-2]- responseData : {"route":"adminForm","screenName":"adminForm","render":{"1":"제휴가게 조회","2":"제휴가게 추가","3":"제휴가게 삭제","4":"종료"}}
+2022/04/26 12:46:48,934 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-2]- receivedJsonString : {"route":"lookStore","screenName":"adminForm","render":{"1":"제휴가게 조회","2":"제휴가게 추가","3":"제휴가게 삭제","4":"종료"}}
+2022/04/26 12:46:48,934 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-2]- route : lookStore
+2022/04/26 12:46:48,934 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-2]- screenName : adminForm
+2022/04/26 12:46:48,934 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-2]- render : {1=제휴가게 조회, 2=제휴가게 추가, 3=제휴가게 삭제, 4=종료}
+2022/04/26 12:46:48,934 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-2]- route : lookStore
+2022/04/26 12:46:48,966 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-2]- screenName : lookStore
+2022/04/26 12:46:48,966 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-2]- route : lookStore
+2022/04/26 12:46:48,966 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-2]- screenName : adminForm
+2022/04/26 12:46:48,966 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-2]- render : {3=하나우동, 4=초선과여포}
+2022/04/26 12:46:48,966 [DEBUG]  [                   chatbot.common.Screen] [ Thread-2]- responseData : {"route":"lookStore","screenName":"lookStore","render":{"3":"하나우동","4":"초선과여포"}}
+2022/04/26 12:46:50,964 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-2]- receivedJsonString : {"route":"adminForm","screenName":"lookStore","render":{"3":"하나우동","4":"초선과여포"}}
+2022/04/26 12:46:50,964 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-2]- route : adminForm
+2022/04/26 12:46:50,964 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-2]- screenName : lookStore
+2022/04/26 12:46:50,964 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-2]- render : {3=하나우동, 4=초선과여포}
+2022/04/26 12:46:50,964 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-2]- route : adminForm
+2022/04/26 12:46:50,964 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-2]- screenName : adminForm
+2022/04/26 12:46:50,964 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-2]- route : adminForm
+2022/04/26 12:46:50,964 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-2]- screenName : lookStore
+2022/04/26 12:46:50,964 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-2]- render : {1=제휴가게 조회, 2=제휴가게 추가, 3=제휴가게 삭제, 4=종료}
+2022/04/26 12:46:50,964 [DEBUG]  [                   chatbot.common.Screen] [ Thread-2]- responseData : {"route":"adminForm","screenName":"adminForm","render":{"1":"제휴가게 조회","2":"제휴가게 추가","3":"제휴가게 삭제","4":"종료"}}
+2022/04/26 12:46:52,995 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-2]- receivedJsonString : {"route":"lookStore","screenName":"adminForm","render":{"1":"제휴가게 조회","2":"제휴가게 추가","3":"제휴가게 삭제","4":"종료"}}
+2022/04/26 12:46:52,995 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-2]- route : lookStore
+2022/04/26 12:46:52,995 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-2]- screenName : adminForm
+2022/04/26 12:46:52,995 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-2]- render : {1=제휴가게 조회, 2=제휴가게 추가, 3=제휴가게 삭제, 4=종료}
+2022/04/26 12:46:52,995 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-2]- route : lookStore
+2022/04/26 12:46:53,042 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-2]- screenName : lookStore
+2022/04/26 12:46:53,042 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-2]- route : lookStore
+2022/04/26 12:46:53,042 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-2]- screenName : adminForm
+2022/04/26 12:46:53,042 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-2]- render : {3=하나우동, 4=초선과여포}
+2022/04/26 12:46:53,042 [DEBUG]  [                   chatbot.common.Screen] [ Thread-2]- responseData : {"route":"lookStore","screenName":"lookStore","render":{"3":"하나우동","4":"초선과여포"}}
+2022/04/26 12:46:55,026 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-2]- receivedJsonString : {"route":"adminForm","screenName":"lookStore","render":{"3":"하나우동","4":"초선과여포"}}
+2022/04/26 12:46:55,026 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-2]- route : adminForm
+2022/04/26 12:46:55,026 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-2]- screenName : lookStore
+2022/04/26 12:46:55,026 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-2]- render : {3=하나우동, 4=초선과여포}
+2022/04/26 12:46:55,026 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-2]- route : adminForm
+2022/04/26 12:46:55,026 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-2]- screenName : adminForm
+2022/04/26 12:46:55,026 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-2]- route : adminForm
+2022/04/26 12:46:55,026 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-2]- screenName : lookStore
+2022/04/26 12:46:55,026 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-2]- render : {1=제휴가게 조회, 2=제휴가게 추가, 3=제휴가게 삭제, 4=종료}
+2022/04/26 12:46:55,026 [DEBUG]  [                   chatbot.common.Screen] [ Thread-2]- responseData : {"route":"adminForm","screenName":"adminForm","render":{"1":"제휴가게 조회","2":"제휴가게 추가","3":"제휴가게 삭제","4":"종료"}}
+2022/04/26 12:47:10,256 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-2]- receivedJsonString : {"route":"exit","screenName":"adminForm","render":{"1":"제휴가게 조회","2":"제휴가게 추가","3":"제휴가게 삭제","4":"종료"}}
+2022/04/26 12:47:10,256 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-2]- route : exit
+2022/04/26 12:47:10,256 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-2]- screenName : adminForm
+2022/04/26 12:47:10,256 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-2]- render : {1=제휴가게 조회, 2=제휴가게 추가, 3=제휴가게 삭제, 4=종료}
+2022/04/26 12:47:10,256 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-2]- route : exit
+2022/04/26 12:47:10,256 [ERROR]  [ chatbot.main.server.ChatbotServerThread] [ Thread-2]- 요청 컨트롤러 없음 : exit
+2022/04/26 12:49:45,074 [INFO ]  [       chatbot.main.server.ChatbotServer] [     main]- Connect 127.0.0.1
+2022/04/26 12:49:45,199 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-3]- receivedJsonString : {"route":"adminForm"}
+2022/04/26 12:49:45,199 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-3]- route : adminForm
+2022/04/26 12:49:45,199 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-3]- route : adminForm
+2022/04/26 12:49:45,199 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-3]- screenName : adminForm
+2022/04/26 12:49:45,199 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-3]- route : adminForm
+2022/04/26 12:49:45,199 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-3]- render : {1=제휴가게 조회, 2=제휴가게 추가, 3=제휴가게 삭제, 4=종료}
+2022/04/26 12:49:45,199 [DEBUG]  [                   chatbot.common.Screen] [ Thread-3]- responseData : {"route":"adminForm","screenName":"adminForm","render":{"1":"제휴가게 조회","2":"제휴가게 추가","3":"제휴가게 삭제","4":"종료"}}
+2022/04/26 12:49:49,979 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-3]- receivedJsonString : {"route":"lookStore","screenName":"adminForm","render":{"1":"제휴가게 조회","2":"제휴가게 추가","3":"제휴가게 삭제","4":"종료"}}
+2022/04/26 12:49:49,979 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-3]- route : lookStore
+2022/04/26 12:49:49,979 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-3]- screenName : adminForm
+2022/04/26 12:49:49,979 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-3]- render : {1=제휴가게 조회, 2=제휴가게 추가, 3=제휴가게 삭제, 4=종료}
+2022/04/26 12:49:49,979 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-3]- route : lookStore
+2022/04/26 12:49:50,026 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-3]- screenName : lookStore
+2022/04/26 12:49:50,026 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-3]- route : lookStore
+2022/04/26 12:49:50,026 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-3]- screenName : adminForm
+2022/04/26 12:49:50,026 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-3]- render : {3=하나우동, 4=초선과여포}
+2022/04/26 12:49:50,026 [DEBUG]  [                   chatbot.common.Screen] [ Thread-3]- responseData : {"route":"lookStore","screenName":"lookStore","render":{"3":"하나우동","4":"초선과여포"}}
+2022/04/26 12:50:05,185 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-3]- receivedJsonString : {"route":"adminForm","screenName":"lookStore","render":{"3":"하나우동","4":"초선과여포"}}
+2022/04/26 12:50:05,185 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-3]- route : adminForm
+2022/04/26 12:50:05,185 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-3]- screenName : lookStore
+2022/04/26 12:50:05,185 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-3]- render : {3=하나우동, 4=초선과여포}
+2022/04/26 12:50:05,185 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-3]- route : adminForm
+2022/04/26 12:50:05,185 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-3]- screenName : adminForm
+2022/04/26 12:50:05,185 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-3]- route : adminForm
+2022/04/26 12:50:05,185 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-3]- screenName : lookStore
+2022/04/26 12:50:05,185 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-3]- render : {1=제휴가게 조회, 2=제휴가게 추가, 3=제휴가게 삭제, 4=종료}
+2022/04/26 12:50:05,185 [DEBUG]  [                   chatbot.common.Screen] [ Thread-3]- responseData : {"route":"adminForm","screenName":"adminForm","render":{"1":"제휴가게 조회","2":"제휴가게 추가","3":"제휴가게 삭제","4":"종료"}}
+2022/04/26 12:50:07,202 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-3]- receivedJsonString : {"route":"lookStore","screenName":"adminForm","render":{"1":"제휴가게 조회","2":"제휴가게 추가","3":"제휴가게 삭제","4":"종료"}}
+2022/04/26 12:50:07,202 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-3]- route : lookStore
+2022/04/26 12:50:07,202 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-3]- screenName : adminForm
+2022/04/26 12:50:07,202 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-3]- render : {1=제휴가게 조회, 2=제휴가게 추가, 3=제휴가게 삭제, 4=종료}
+2022/04/26 12:50:07,202 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-3]- route : lookStore
+2022/04/26 12:50:07,233 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-3]- screenName : lookStore
+2022/04/26 12:50:07,233 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-3]- route : lookStore
+2022/04/26 12:50:07,233 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-3]- screenName : adminForm
+2022/04/26 12:50:07,233 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-3]- render : {1=한돈애, 2=통닭, 3=하나우동, 4=초선과여포, 5=숯불애}
+2022/04/26 12:50:07,233 [DEBUG]  [                   chatbot.common.Screen] [ Thread-3]- responseData : {"route":"lookStore","screenName":"lookStore","render":{"1":"한돈애","2":"통닭","3":"하나우동","4":"초선과여포","5":"숯불애"}}
+2022/04/26 12:50:10,228 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-3]- receivedJsonString : {"route":"adminForm","screenName":"lookStore","render":{"1":"한돈애","2":"통닭","3":"하나우동","4":"초선과여포","5":"숯불애"}}
+2022/04/26 12:50:10,228 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-3]- route : adminForm
+2022/04/26 12:50:10,228 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-3]- screenName : lookStore
+2022/04/26 12:50:10,228 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-3]- render : {1=한돈애, 2=통닭, 3=하나우동, 4=초선과여포, 5=숯불애}
+2022/04/26 12:50:10,228 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-3]- route : adminForm
+2022/04/26 12:50:10,228 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-3]- screenName : adminForm
+2022/04/26 12:50:10,228 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-3]- route : adminForm
+2022/04/26 12:50:10,228 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-3]- screenName : lookStore
+2022/04/26 12:50:10,228 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-3]- render : {1=제휴가게 조회, 2=제휴가게 추가, 3=제휴가게 삭제, 4=종료}
+2022/04/26 12:50:10,228 [DEBUG]  [                   chatbot.common.Screen] [ Thread-3]- responseData : {"route":"adminForm","screenName":"adminForm","render":{"1":"제휴가게 조회","2":"제휴가게 추가","3":"제휴가게 삭제","4":"종료"}}
+2022/04/26 12:50:14,289 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-3]- receivedJsonString : {"route":"deleteStoreForm","screenName":"adminForm","render":{"1":"제휴가게 조회","2":"제휴가게 추가","3":"제휴가게 삭제","4":"종료"}}
+2022/04/26 12:50:14,289 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-3]- route : deleteStoreForm
+2022/04/26 12:50:14,289 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-3]- screenName : adminForm
+2022/04/26 12:50:14,289 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-3]- render : {1=제휴가게 조회, 2=제휴가게 추가, 3=제휴가게 삭제, 4=종료}
+2022/04/26 12:50:14,289 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-3]- route : deleteStoreForm
+2022/04/26 12:50:14,289 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-3]- screenName : deleteStoreForm
+2022/04/26 12:50:14,289 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-3]- route : deleteStoreForm
+2022/04/26 12:50:14,289 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-3]- screenName : adminForm
+2022/04/26 12:50:14,289 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-3]- render : 삭제할 가게번호를 입력해주세요.
+2022/04/26 12:50:14,289 [DEBUG]  [                   chatbot.common.Screen] [ Thread-3]- responseData : {"route":"deleteStoreForm","screenName":"deleteStoreForm","render":"삭제할 가게번호를 입력해주세요."}
+2022/04/26 12:50:16,320 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-3]- receivedJsonString : {"route":"deleteStore","screenName":"deleteStoreForm","requestParam":"1","render":"삭제할 가게번호를 입력해주세요."}
+2022/04/26 12:50:16,320 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-3]- route : deleteStore
+2022/04/26 12:50:16,320 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-3]- screenName : deleteStoreForm
+2022/04/26 12:50:16,320 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-3]- requestParam : 1
+2022/04/26 12:50:16,320 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-3]- render : 삭제할 가게번호를 입력해주세요.
+2022/04/26 12:50:16,320 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-3]- route : deleteStore
+2022/04/26 12:50:16,367 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-3]- screenName : deleteStoreResult
+2022/04/26 12:50:16,367 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-3]- route : deleteStore
+2022/04/26 12:50:16,367 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-3]- screenName : deleteStoreForm
+2022/04/26 12:50:16,367 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-3]- requestParam : 1
+2022/04/26 12:50:16,367 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-3]- render : 가게고유번호 1 정보가 삭제되었습니다.
+2022/04/26 12:50:16,367 [DEBUG]  [                   chatbot.common.Screen] [ Thread-3]- responseData : {"route":"deleteStore","screenName":"deleteStoreResult","requestParam":"1","render":"가게고유번호 1 정보가 삭제되었습니다."}
+2022/04/26 12:50:16,367 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-3]- receivedJsonString : {"route":"adminForm","screenName":"deleteStoreResult","requestParam":"1","render":"가게고유번호 1 정보가 삭제되었습니다."}
+2022/04/26 12:50:16,367 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-3]- route : adminForm
+2022/04/26 12:50:16,367 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-3]- screenName : deleteStoreResult
+2022/04/26 12:50:16,367 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-3]- requestParam : 1
+2022/04/26 12:50:16,367 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-3]- render : 가게고유번호 1 정보가 삭제되었습니다.
+2022/04/26 12:50:16,367 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-3]- route : adminForm
+2022/04/26 12:50:16,367 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-3]- screenName : adminForm
+2022/04/26 12:50:16,367 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-3]- route : adminForm
+2022/04/26 12:50:16,367 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-3]- screenName : deleteStoreResult
+2022/04/26 12:50:16,367 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-3]- requestParam : 1
+2022/04/26 12:50:16,367 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-3]- render : {1=제휴가게 조회, 2=제휴가게 추가, 3=제휴가게 삭제, 4=종료}
+2022/04/26 12:50:16,367 [DEBUG]  [                   chatbot.common.Screen] [ Thread-3]- responseData : {"route":"adminForm","screenName":"adminForm","requestParam":"1","render":{"1":"제휴가게 조회","2":"제휴가게 추가","3":"제휴가게 삭제","4":"종료"}}
+2022/04/26 12:50:22,402 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-3]- receivedJsonString : {"route":"lookStore","screenName":"adminForm","requestParam":"1","render":{"1":"제휴가게 조회","2":"제휴가게 추가","3":"제휴가게 삭제","4":"종료"}}
+2022/04/26 12:50:22,402 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-3]- route : lookStore
+2022/04/26 12:50:22,402 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-3]- screenName : adminForm
+2022/04/26 12:50:22,402 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-3]- requestParam : 1
+2022/04/26 12:50:22,402 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-3]- render : {1=제휴가게 조회, 2=제휴가게 추가, 3=제휴가게 삭제, 4=종료}
+2022/04/26 12:50:22,402 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-3]- route : lookStore
+2022/04/26 12:50:22,465 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-3]- screenName : lookStore
+2022/04/26 12:50:22,465 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-3]- route : lookStore
+2022/04/26 12:50:22,465 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-3]- screenName : adminForm
+2022/04/26 12:50:22,465 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-3]- requestParam : 1
+2022/04/26 12:50:22,465 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-3]- render : {2=통닭, 3=하나우동, 4=초선과여포, 5=숯불애}
+2022/04/26 12:50:22,465 [DEBUG]  [                   chatbot.common.Screen] [ Thread-3]- responseData : {"route":"lookStore","screenName":"lookStore","requestParam":"1","render":{"2":"통닭","3":"하나우동","4":"초선과여포","5":"숯불애"}}
+2022/04/26 12:50:54,159 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-3]- receivedJsonString : {"route":"adminForm","screenName":"lookStore","requestParam":"1","render":{"2":"통닭","3":"하나우동","4":"초선과여포","5":"숯불애"}}
+2022/04/26 12:50:54,159 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-3]- route : adminForm
+2022/04/26 12:50:54,159 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-3]- screenName : lookStore
+2022/04/26 12:50:54,159 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-3]- requestParam : 1
+2022/04/26 12:50:54,160 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-3]- render : {2=통닭, 3=하나우동, 4=초선과여포, 5=숯불애}
+2022/04/26 12:50:54,160 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-3]- route : adminForm
+2022/04/26 12:50:54,160 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-3]- screenName : adminForm
+2022/04/26 12:50:54,160 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-3]- route : adminForm
+2022/04/26 12:50:54,160 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-3]- screenName : lookStore
+2022/04/26 12:50:54,160 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-3]- requestParam : 1
+2022/04/26 12:50:54,160 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-3]- render : {1=제휴가게 조회, 2=제휴가게 추가, 3=제휴가게 삭제, 4=종료}
+2022/04/26 12:50:54,161 [DEBUG]  [                   chatbot.common.Screen] [ Thread-3]- responseData : {"route":"adminForm","screenName":"adminForm","requestParam":"1","render":{"1":"제휴가게 조회","2":"제휴가게 추가","3":"제휴가게 삭제","4":"종료"}}
+2022/04/26 13:53:24,941 [INFO ]  [       chatbot.main.server.ChatbotServer] [     main]- Connect 127.0.0.1
+2022/04/26 13:53:25,066 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- receivedJsonString : {"route":"adminForm"}
+2022/04/26 13:53:25,113 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- route : adminForm
+2022/04/26 13:53:25,113 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- route : adminForm
+2022/04/26 13:53:25,113 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- screenName : adminForm
+2022/04/26 13:53:25,113 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- route : adminForm
+2022/04/26 13:53:25,113 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- render : {1=제휴가게 조회, 2=제휴가게 추가, 3=제휴가게 삭제, 4=종료}
+2022/04/26 13:53:25,129 [DEBUG]  [                   chatbot.common.Screen] [ Thread-0]- responseData : {"route":"adminForm","screenName":"adminForm","render":{"1":"제휴가게 조회","2":"제휴가게 추가","3":"제휴가게 삭제","4":"종료"}}
+2022/04/26 13:53:31,856 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- receivedJsonString : {"route":"lookStore","screenName":"adminForm","render":{"1":"제휴가게 조회","2":"제휴가게 추가","3":"제휴가게 삭제","4":"종료"}}
+2022/04/26 13:53:31,856 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- route : lookStore
+2022/04/26 13:53:31,856 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- screenName : adminForm
+2022/04/26 13:53:31,872 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- render : {1=제휴가게 조회, 2=제휴가게 추가, 3=제휴가게 삭제, 4=종료}
+2022/04/26 13:53:31,872 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- route : lookStore
+2022/04/26 13:53:32,403 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- screenName : lookStore
+2022/04/26 13:53:32,403 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- route : lookStore
+2022/04/26 13:53:32,403 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- screenName : adminForm
+2022/04/26 13:53:32,403 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- render : {2=통닭, 3=하나우동, 4=초선과여포, 5=숯불애}
+2022/04/26 13:53:32,418 [DEBUG]  [                   chatbot.common.Screen] [ Thread-0]- responseData : {"route":"lookStore","screenName":"lookStore","render":{"2":"통닭","3":"하나우동","4":"초선과여포","5":"숯불애"}}
+2022/04/26 13:54:09,402 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- receivedJsonString : {"route":"adminForm","screenName":"lookStore","render":{"2":"통닭","3":"하나우동","4":"초선과여포","5":"숯불애"}}
+2022/04/26 13:54:09,402 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- route : adminForm
+2022/04/26 13:54:09,402 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- screenName : lookStore
+2022/04/26 13:54:09,402 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- render : {2=통닭, 3=하나우동, 4=초선과여포, 5=숯불애}
+2022/04/26 13:54:09,402 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- route : adminForm
+2022/04/26 13:54:09,402 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- screenName : adminForm
+2022/04/26 13:54:09,402 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- route : adminForm
+2022/04/26 13:54:09,402 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- screenName : lookStore
+2022/04/26 13:54:09,402 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- render : {1=제휴가게 조회, 2=제휴가게 추가, 3=제휴가게 삭제, 4=종료}
+2022/04/26 13:54:09,418 [DEBUG]  [                   chatbot.common.Screen] [ Thread-0]- responseData : {"route":"adminForm","screenName":"adminForm","render":{"1":"제휴가게 조회","2":"제휴가게 추가","3":"제휴가게 삭제","4":"종료"}}
+2022/04/26 13:55:09,125 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- receivedJsonString : {"route":"lookStore","screenName":"adminForm","render":{"1":"제휴가게 조회","2":"제휴가게 추가","3":"제휴가게 삭제","4":"종료"}}
+2022/04/26 13:55:09,125 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- route : lookStore
+2022/04/26 13:55:09,125 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- screenName : adminForm
+2022/04/26 13:55:09,125 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- render : {1=제휴가게 조회, 2=제휴가게 추가, 3=제휴가게 삭제, 4=종료}
+2022/04/26 13:55:09,125 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- route : lookStore
+2022/04/26 13:55:09,188 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- screenName : lookStore
+2022/04/26 13:55:09,188 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- route : lookStore
+2022/04/26 13:55:09,188 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- screenName : adminForm
+2022/04/26 13:55:09,188 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- render : {2=통닭, 3=하나우동, 4=초선과여포, 5=숯불애}
+2022/04/26 13:55:09,188 [DEBUG]  [                   chatbot.common.Screen] [ Thread-0]- responseData : {"route":"lookStore","screenName":"lookStore","render":{"2":"통닭","3":"하나우동","4":"초선과여포","5":"숯불애"}}
+2022/04/26 13:55:12,171 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- receivedJsonString : {"route":"adminForm","screenName":"lookStore","render":{"2":"통닭","3":"하나우동","4":"초선과여포","5":"숯불애"}}
+2022/04/26 13:55:12,171 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- route : adminForm
+2022/04/26 13:55:12,171 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- screenName : lookStore
+2022/04/26 13:55:12,171 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- render : {2=통닭, 3=하나우동, 4=초선과여포, 5=숯불애}
+2022/04/26 13:55:12,171 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- route : adminForm
+2022/04/26 13:55:12,171 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- screenName : adminForm
+2022/04/26 13:55:12,171 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- route : adminForm
+2022/04/26 13:55:12,171 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- screenName : lookStore
+2022/04/26 13:55:12,171 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- render : {1=제휴가게 조회, 2=제휴가게 추가, 3=제휴가게 삭제, 4=종료}
+2022/04/26 13:55:12,171 [DEBUG]  [                   chatbot.common.Screen] [ Thread-0]- responseData : {"route":"adminForm","screenName":"adminForm","render":{"1":"제휴가게 조회","2":"제휴가게 추가","3":"제휴가게 삭제","4":"종료"}}
+2022/04/26 13:55:15,217 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- receivedJsonString : {"route":"lookStore","screenName":"adminForm","render":{"1":"제휴가게 조회","2":"제휴가게 추가","3":"제휴가게 삭제","4":"종료"}}
+2022/04/26 13:55:15,217 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- route : lookStore
+2022/04/26 13:55:15,217 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- screenName : adminForm
+2022/04/26 13:55:15,217 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- render : {1=제휴가게 조회, 2=제휴가게 추가, 3=제휴가게 삭제, 4=종료}
+2022/04/26 13:55:15,217 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- route : lookStore
+2022/04/26 13:55:15,264 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- screenName : lookStore
+2022/04/26 13:55:15,264 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- route : lookStore
+2022/04/26 13:55:15,264 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- screenName : adminForm
+2022/04/26 13:55:15,264 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- render : {2=통닭, 3=하나우동, 4=초선과여포, 5=숯불애}
+2022/04/26 13:55:15,264 [DEBUG]  [                   chatbot.common.Screen] [ Thread-0]- responseData : {"route":"lookStore","screenName":"lookStore","render":{"2":"통닭","3":"하나우동","4":"초선과여포","5":"숯불애"}}
+2022/04/26 13:55:18,264 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- receivedJsonString : {"route":"adminForm","screenName":"lookStore","render":{"2":"통닭","3":"하나우동","4":"초선과여포","5":"숯불애"}}
+2022/04/26 13:55:18,264 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- route : adminForm
+2022/04/26 13:55:18,264 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- screenName : lookStore
+2022/04/26 13:55:18,264 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- render : {2=통닭, 3=하나우동, 4=초선과여포, 5=숯불애}
+2022/04/26 13:55:18,264 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- route : adminForm
+2022/04/26 13:55:18,264 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- screenName : adminForm
+2022/04/26 13:55:18,264 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- route : adminForm
+2022/04/26 13:55:18,264 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- screenName : lookStore
+2022/04/26 13:55:18,264 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- render : {1=제휴가게 조회, 2=제휴가게 추가, 3=제휴가게 삭제, 4=종료}
+2022/04/26 13:55:18,264 [DEBUG]  [                   chatbot.common.Screen] [ Thread-0]- responseData : {"route":"adminForm","screenName":"adminForm","render":{"1":"제휴가게 조회","2":"제휴가게 추가","3":"제휴가게 삭제","4":"종료"}}
+2022/04/26 13:55:21,310 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- receivedJsonString : {"route":"lookStore","screenName":"adminForm","render":{"1":"제휴가게 조회","2":"제휴가게 추가","3":"제휴가게 삭제","4":"종료"}}
+2022/04/26 13:55:21,310 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- route : lookStore
+2022/04/26 13:55:21,310 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- screenName : adminForm
+2022/04/26 13:55:21,310 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- render : {1=제휴가게 조회, 2=제휴가게 추가, 3=제휴가게 삭제, 4=종료}
+2022/04/26 13:55:21,310 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- route : lookStore
+2022/04/26 13:55:21,357 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- screenName : lookStore
+2022/04/26 13:55:21,357 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- route : lookStore
+2022/04/26 13:55:21,357 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- screenName : adminForm
+2022/04/26 13:55:21,357 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- render : {2=통닭, 3=하나우동, 4=초선과여포, 5=숯불애}
+2022/04/26 13:55:21,357 [DEBUG]  [                   chatbot.common.Screen] [ Thread-0]- responseData : {"route":"lookStore","screenName":"lookStore","render":{"2":"통닭","3":"하나우동","4":"초선과여포","5":"숯불애"}}
+2022/04/26 13:55:23,341 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- receivedJsonString : {"route":"adminForm","screenName":"lookStore","render":{"2":"통닭","3":"하나우동","4":"초선과여포","5":"숯불애"}}
+2022/04/26 13:55:23,341 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- route : adminForm
+2022/04/26 13:55:23,341 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- screenName : lookStore
+2022/04/26 13:55:23,341 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- render : {2=통닭, 3=하나우동, 4=초선과여포, 5=숯불애}
+2022/04/26 13:55:23,341 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- route : adminForm
+2022/04/26 13:55:23,341 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- screenName : adminForm
+2022/04/26 13:55:23,341 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- route : adminForm
+2022/04/26 13:55:23,341 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- screenName : lookStore
+2022/04/26 13:55:23,341 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- render : {1=제휴가게 조회, 2=제휴가게 추가, 3=제휴가게 삭제, 4=종료}
+2022/04/26 13:55:23,341 [DEBUG]  [                   chatbot.common.Screen] [ Thread-0]- responseData : {"route":"adminForm","screenName":"adminForm","render":{"1":"제휴가게 조회","2":"제휴가게 추가","3":"제휴가게 삭제","4":"종료"}}
+2022/04/26 13:55:28,417 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- receivedJsonString : {"route":"addStoreForm","screenName":"adminForm","render":{"1":"제휴가게 조회","2":"제휴가게 추가","3":"제휴가게 삭제","4":"종료"}}
+2022/04/26 13:55:28,417 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- route : addStoreForm
+2022/04/26 13:55:28,417 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- screenName : adminForm
+2022/04/26 13:55:28,417 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- render : {1=제휴가게 조회, 2=제휴가게 추가, 3=제휴가게 삭제, 4=종료}
+2022/04/26 13:55:28,417 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- route : addStoreForm
+2022/04/26 13:55:28,417 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- screenName : addStore
+2022/04/26 13:55:28,417 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- route : addStoreForm
+2022/04/26 13:55:28,417 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- screenName : adminForm
+2022/04/26 13:55:28,417 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- render : {1=가게이름}
+2022/04/26 13:55:28,417 [DEBUG]  [                   chatbot.common.Screen] [ Thread-0]- responseData : {"route":"addStoreForm","screenName":"addStore","render":{"1":"가게이름"}}
+2022/04/26 13:56:52,120 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- receivedJsonString : {"route":"addStore","screenName":"addStore","requestParam":{},"render":{"1":"가게이름"}}
+2022/04/26 13:56:52,120 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- route : addStore
+2022/04/26 13:56:52,121 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- screenName : addStore
+2022/04/26 13:56:52,121 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- requestParam : {}
+2022/04/26 13:56:52,121 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- render : {1=가게이름}
+2022/04/26 13:56:52,121 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- route : addStore
+2022/04/26 13:56:52,169 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- screenName : addStoreInfoForm
+2022/04/26 13:56:52,169 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- route : addStore
+2022/04/26 13:56:52,169 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- screenName : addStore
+2022/04/26 13:56:52,169 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- requestParam : {}
+2022/04/26 13:56:52,169 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- render : 입력한 [ null ] 가게 제휴 등록 성공
+2022/04/26 13:56:52,169 [DEBUG]  [                   chatbot.common.Screen] [ Thread-0]- responseData : {"route":"addStore","screenName":"addStoreInfoForm","requestParam":{},"render":"입력한 [ null ] 가게 제휴 등록 성공"}
+2022/04/26 13:56:52,950 [INFO ]  [       chatbot.main.server.ChatbotServer] [     main]- Connect 127.0.0.1
+2022/04/26 13:56:53,091 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-2]- receivedJsonString : {"route":"adminForm"}
+2022/04/26 13:56:53,091 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-2]- route : adminForm
+2022/04/26 13:56:53,091 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-2]- route : adminForm
+2022/04/26 13:56:53,091 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-2]- screenName : adminForm
+2022/04/26 13:56:53,091 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-2]- route : adminForm
+2022/04/26 13:56:53,091 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-2]- render : {1=제휴가게 조회, 2=제휴가게 추가, 3=제휴가게 삭제, 4=종료}
+2022/04/26 13:56:53,091 [DEBUG]  [                   chatbot.common.Screen] [ Thread-2]- responseData : {"route":"adminForm","screenName":"adminForm","render":{"1":"제휴가게 조회","2":"제휴가게 추가","3":"제휴가게 삭제","4":"종료"}}
+2022/04/26 13:56:53,823 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-2]- receivedJsonString : null
+2022/04/26 13:56:54,522 [INFO ]  [       chatbot.main.server.ChatbotServer] [     main]- Connect 127.0.0.1
+2022/04/26 13:56:54,662 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-3]- receivedJsonString : {"route":"adminForm"}
+2022/04/26 13:56:54,662 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-3]- route : adminForm
+2022/04/26 13:56:54,662 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-3]- route : adminForm
+2022/04/26 13:56:54,662 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-3]- screenName : adminForm
+2022/04/26 13:56:54,662 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-3]- route : adminForm
+2022/04/26 13:56:54,662 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-3]- render : {1=제휴가게 조회, 2=제휴가게 추가, 3=제휴가게 삭제, 4=종료}
+2022/04/26 13:56:54,662 [DEBUG]  [                   chatbot.common.Screen] [ Thread-3]- responseData : {"route":"adminForm","screenName":"adminForm","render":{"1":"제휴가게 조회","2":"제휴가게 추가","3":"제휴가게 삭제","4":"종료"}}
+2022/04/26 13:56:58,412 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-3]- receivedJsonString : {"route":"addStoreForm","screenName":"adminForm","render":{"1":"제휴가게 조회","2":"제휴가게 추가","3":"제휴가게 삭제","4":"종료"}}
+2022/04/26 13:56:58,412 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-3]- route : addStoreForm
+2022/04/26 13:56:58,412 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-3]- screenName : adminForm
+2022/04/26 13:56:58,412 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-3]- render : {1=제휴가게 조회, 2=제휴가게 추가, 3=제휴가게 삭제, 4=종료}
+2022/04/26 13:56:58,412 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-3]- route : addStoreForm
+2022/04/26 13:56:58,412 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-3]- screenName : addStore
+2022/04/26 13:56:58,412 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-3]- route : addStoreForm
+2022/04/26 13:56:58,412 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-3]- screenName : adminForm
+2022/04/26 13:56:58,412 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-3]- render : {1=가게이름}
+2022/04/26 13:56:58,427 [DEBUG]  [                   chatbot.common.Screen] [ Thread-3]- responseData : {"route":"addStoreForm","screenName":"addStore","render":{"1":"가게이름"}}
+2022/04/26 13:57:57,643 [INFO ]  [       chatbot.main.server.ChatbotServer] [     main]- Connect 127.0.0.1
+2022/04/26 13:57:57,767 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- receivedJsonString : {"route":"adminForm"}
+2022/04/26 13:57:57,822 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- route : adminForm
+2022/04/26 13:57:57,822 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- route : adminForm
+2022/04/26 13:57:57,823 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- screenName : adminForm
+2022/04/26 13:57:57,824 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- route : adminForm
+2022/04/26 13:57:57,825 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- render : {1=제휴가게 조회, 2=제휴가게 추가, 3=제휴가게 삭제, 4=종료}
+2022/04/26 13:57:57,827 [DEBUG]  [                   chatbot.common.Screen] [ Thread-0]- responseData : {"route":"adminForm","screenName":"adminForm","render":{"1":"제휴가게 조회","2":"제휴가게 추가","3":"제휴가게 삭제","4":"종료"}}
+2022/04/26 13:58:01,514 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- receivedJsonString : {"route":"addStoreForm","screenName":"adminForm","render":{"1":"제휴가게 조회","2":"제휴가게 추가","3":"제휴가게 삭제","4":"종료"}}
+2022/04/26 13:58:01,516 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- route : addStoreForm
+2022/04/26 13:58:01,517 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- screenName : adminForm
+2022/04/26 13:58:01,522 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- render : {1=제휴가게 조회, 2=제휴가게 추가, 3=제휴가게 삭제, 4=종료}
+2022/04/26 13:58:01,524 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- route : addStoreForm
+2022/04/26 13:58:01,525 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- screenName : addStore
+2022/04/26 13:58:01,526 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- route : addStoreForm
+2022/04/26 13:58:01,527 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- screenName : adminForm
+2022/04/26 13:58:01,529 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- render : 추가할 가게명을 입력해주세요.
+2022/04/26 13:58:01,530 [DEBUG]  [                   chatbot.common.Screen] [ Thread-0]- responseData : {"route":"addStoreForm","screenName":"addStore","render":"추가할 가게명을 입력해주세요."}
+2022/04/26 13:58:14,624 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- receivedJsonString : {"route":"addStore","screenName":"addStore","requestParam":{"stName":"맥도날드"},"render":"추가할 가게명을 입력해주세요."}
+2022/04/26 13:58:14,627 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- route : addStore
+2022/04/26 13:58:14,627 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- screenName : addStore
+2022/04/26 13:58:14,628 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- requestParam : {stName=맥도날드}
+2022/04/26 13:58:14,629 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- render : 추가할 가게명을 입력해주세요.
+2022/04/26 13:58:14,630 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- route : addStore
+2022/04/26 13:58:15,151 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- screenName : addStoreInfoForm
+2022/04/26 13:58:15,152 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- route : addStore
+2022/04/26 13:58:15,152 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- screenName : addStore
+2022/04/26 13:58:15,153 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- requestParam : {stName=맥도날드}
+2022/04/26 13:58:15,153 [DEBUG]  [ chatbot.main.server.ChatbotServerThread] [ Thread-0]- render : 입력한 [ 맥도날드 ] 가게 제휴 등록 성공
+2022/04/26 13:58:15,155 [DEBUG]  [                   chatbot.common.Screen] [ Thread-0]- responseData : {"route":"addStore","screenName":"addStoreInfoForm","requestParam":{"stName":"맥도날드"},"render":"입력한 [ 맥도날드 ] 가게 제휴 등록 성공"}

@@ -1,5 +1,6 @@
 package chatbot.main.server;
 
+import chatbot.admin.controller.*;
 import chatbot.common.Screen;
 import chatbot.main.controller.Controller;
 import chatbot.member.controller.*;
@@ -36,6 +37,15 @@ public class ChatbotServerThread extends Thread {
 
         controllerMap.put("memberLogin", new MemberLoginController());
         controllerMap.put("memberSave", new MemberSaveController());
+
+        controllerMap.put("adminForm", new AdminFormController());
+
+        controllerMap.put("lookStore",new LookStoreController());
+        controllerMap.put("addStoreForm", new AddStoreFormController());
+        controllerMap.put("deleteStore",new DeleteStoreController());
+        controllerMap.put("addStore", new AddStoreController());
+        controllerMap.put("addStoreInfo", new AddStoreInfoController());
+        controllerMap.put("deleteStoreForm",new DeleteStoreFormController());
     }
 
     @Override
