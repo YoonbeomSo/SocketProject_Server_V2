@@ -8,7 +8,7 @@ import java.util.Map;
 public class LookStoreController implements Controller {
     @Override
     public String process(Map<String, Object> model) {
-        model.remove("successMessage");
+        //model.remove("successMessage");
         AdminService adminService = new AdminService();
         model.put("render", adminService.lookStore());
 

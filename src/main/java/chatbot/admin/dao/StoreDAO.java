@@ -41,7 +41,7 @@ public class StoreDAO {
         Connection conn = db.getConnection();;
         ResultSet rs = null;
         String stNo;
-        String message = stName + "Store 예약 시간 및 인원 입력 정보 저장 성공";
+        String message = stName + " Store 예약 시간 및 인원 입력 정보 저장 성공";
         try {
             Statement statement = conn.createStatement();
             for (Map.Entry<String, String> stringEntry : data.entrySet()
@@ -53,7 +53,7 @@ public class StoreDAO {
             rs.close();
             conn.close();
         } catch (SQLException e) {
-            message = stName + "예약 시간 및 인원 입력 정보 저장 실패";
+            message = stName + " 예약 시간 및 인원 입력 정보 저장 실패";
             e.printStackTrace();
         }
         return message;

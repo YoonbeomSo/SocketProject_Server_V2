@@ -12,7 +12,6 @@ public class AddStoreController implements chatbot.main.controller.Controller {
 
         String result = adminService.addStore(model);
 
-
         model.put("successMessage", result);
 //        model.put("render", render);
 
