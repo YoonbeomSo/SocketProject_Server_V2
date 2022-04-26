@@ -14,17 +14,20 @@ public class MemberJoinController implements Controller {
     public String process(Map<String, Object> model) {
 
         MemberService memberService = new MemberService(new MemberDao());
-        memberService.join(model);
-
-        model.put("successMessage", "회원가입이 완료되었습니다.");
-
-        // 회원가입 이후 맨 처음 화면으로 돌려보냄
         Map<String, String> render = new HashMap<>();
-        render.put("1", "로그인");
-        render.put("2", "회원가입");
 
-        model.replace("render", render);
+        boolean isJoined = memberService.join(model);
+        if (isJoined) {
+            model.put("successMessage", "회원가입이 완료되었습니다.");
+            model.remove("errorMessage");
+            model.remove("requestParam");
+            model.put("forward", "memberForm");
+            return "";
+        }
 
-        return "memberForm";
+        model.put("errorMessage", "이미 등록된 아이디 입니다.");
+        model.remove("requestParam");
+        model.put("forward", "memberJoinForm");
+        return "";
     }
 }

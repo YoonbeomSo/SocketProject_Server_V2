@@ -94,9 +94,9 @@ public class ChatbotServerThread extends Thread {
                 }
 
                 String screenName = controller.process(model);
-
                 String forward = (String) model.get("forward");
                 if (forward != null) {
+                    model.remove("forward");
                     controller = controllerMap.get(forward);
                     screenName = controller.process(model);
                 }

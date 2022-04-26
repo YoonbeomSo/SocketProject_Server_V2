@@ -13,8 +13,24 @@ public class MemberService implements Service {
         this.memberDao = memberDao;
     }
 
+//    @Override
+//    public void join(Map<String, Object> model) {
+//        Gson gson = new Gson();
+//        Map<String, String> requestParamMap = (Map<String, String>) model.get("requestParam");
+//
+//        MemberDTO member = new MemberDTO();
+//        member.setId(requestParamMap.get("id"));
+//        member.setPassword(requestParamMap.get("password"));
+//        member.setName(requestParamMap.get("name"));
+//        member.setMobile(requestParamMap.get("mobile"));
+//
+//        System.out.println("member.toString() = " + member.toString());
+//
+//        memberDao.save(member);
+//    }
+
     @Override
-    public void join(Map<String, Object> model) {
+    public boolean join(Map<String, Object> model) {
         Gson gson = new Gson();
         Map<String, String> requestParamMap = (Map<String, String>) model.get("requestParam");
 
@@ -26,8 +42,16 @@ public class MemberService implements Service {
 
         System.out.println("member.toString() = " + member.toString());
 
+        boolean isFinded = memberDao.findId(requestParamMap.get("id"));
+        if (isFinded) {
+            return false;
+        }
+
         memberDao.save(member);
+        return true;
     }
+
+
 
     @Override
     public boolean login(Map<String, Object> model) {
@@ -37,7 +61,15 @@ public class MemberService implements Service {
         String requestPassword = requestParamMap.get("password");
 
         String dbPassword = memberDao.findMemberbyId(requestId).getPassword();
-        return requestPassword.equals(dbPassword);
+
+        if (requestPassword.equals(dbPassword)) {
+            MemberDTO member = memberDao.findMemberbyId(requestId);
+            String memberJsonString = gson.toJson(member);
+            model.put("member", memberJsonString);
+            return true;
+        }
+
+        return false;
     }
 
 }

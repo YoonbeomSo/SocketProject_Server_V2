@@ -8,4 +8,6 @@ public interface Dao {
 
     MemberDTO findMemberbyId(String id);
 
+    boolean findId(String id);
+
 }

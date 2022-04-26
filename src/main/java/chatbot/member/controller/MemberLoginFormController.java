@@ -12,6 +12,8 @@ public class MemberLoginFormController implements Controller {
 
         Map<String, String> render = new HashMap<>();
         render.put("1", "아이디와 비번을 입력하세요");
+        model.remove("errorMessage");
+        model.remove("successMessage");
         model.put("render", render);
 
         return "memberLoginForm";

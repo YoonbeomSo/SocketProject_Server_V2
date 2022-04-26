@@ -42,8 +42,6 @@ public class MemberDao implements Dao {
                 e.printStackTrace();
             }
         }
-
-
     }
 
     @Override
@@ -53,8 +51,6 @@ public class MemberDao implements Dao {
         PreparedStatement pstmt = null;
         ResultSet rs;
 
-        // 대소문자 구분은 회원가입 시 필요할듯
-//        String sql = "SELECT * FROM MEMBER WHERE LOWER(id) = LOWER(?)";
         String sql = "SELECT * FROM MEMBER WHERE id=?";
 
         MemberDTO member = new MemberDTO();
@@ -88,5 +84,41 @@ public class MemberDao implements Dao {
         }
 
         return member;
+    }
+
+    @Override
+    public boolean findId(String id) {
+
+        Connection connection = null;
+        PreparedStatement pstmt = null;
+        ResultSet rs;
+
+        String sql = "SELECT * FROM MEMBER WHERE LOWER(id) = LOWER(?)";
+
+        try {
+            connection = db.getConnection();
+
+            pstmt = connection.prepareStatement(sql);
+
+            pstmt.setString(1, id);
+
+            rs = pstmt.executeQuery();
+
+            if (rs.next()) {
+                return true;
+            }
+
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } finally {
+            try {
+                connection.close();
+                pstmt.close();
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
+        }
+
+        return false;
     }
 }
