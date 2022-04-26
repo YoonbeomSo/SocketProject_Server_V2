@@ -7,10 +7,7 @@ import chatbot.member.controller.*;
 //import chatbot.reservation.controller.ReservationFormController;
 //import chatbot.reservation.controller.ReservationListController;
 //import chatbot.reservation.controller.ReservationSmsController;
-import chatbot.reservation.controller.ReservationFormController;
-import chatbot.reservation.controller.ReservationListController;
-import chatbot.reservation.controller.ReservationPeopleUpdateController;
-import chatbot.reservation.controller.ReservationTimeUpdateController;
+import chatbot.reservation.controller.*;
 import com.google.gson.Gson;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonParser;
@@ -70,8 +67,8 @@ public class ChatbotServerThread extends Thread {
         controllerMap.put("reservationPeopleUpdate", new ReservationPeopleUpdateController());
 
 
-//        // 예약문자 진행
-//        controllerMap.put("reservationSmsSend", new ReservationSmsController());
+        // 예약문자 진행
+        controllerMap.put("reservationSmsSend", new ReservationSmsController());
     }
 
     @Override
