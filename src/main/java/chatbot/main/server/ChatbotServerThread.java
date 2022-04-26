@@ -7,6 +7,10 @@ import chatbot.member.controller.*;
 //import chatbot.reservation.controller.ReservationFormController;
 //import chatbot.reservation.controller.ReservationListController;
 //import chatbot.reservation.controller.ReservationSmsController;
+import chatbot.reservation.controller.ReservationFormController;
+import chatbot.reservation.controller.ReservationListController;
+import chatbot.reservation.controller.ReservationPeopleUpdateController;
+import chatbot.reservation.controller.ReservationTimeUpdateController;
 import com.google.gson.Gson;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonParser;
@@ -56,17 +60,16 @@ public class ChatbotServerThread extends Thread {
         controllerMap.put("addStoreInfo", new AddStoreInfoController());
         controllerMap.put("deleteStoreForm", new DeleteStoreFormController());
 
+        // 클라이언트 로그인 완료 시 식당목록 보여줌
+        controllerMap.put("reservationForm", new ReservationFormController());
+        // 클라이언트가 식당 선택 시 시간 및 인원 보여줌
+        controllerMap.put("reservationList", new ReservationListController());
+        // 클라이언트가 입력한 시간 정보 등록
+        controllerMap.put("reservationTimeUpdate", new ReservationTimeUpdateController());
+        // 클라이언트가 입력한 인원 정보 등록
+        controllerMap.put("reservationPeopleUpdate", new ReservationPeopleUpdateController());
 
-//        // 클라이언트 로그인 완료 시 식당목록 보여줌
-//        controllerMap.put("reservationForm", new ReservationFormController());
-//
-//        // 클라이언트가 식당 선택 시 시간 및 인원 보여줌
-//        controllerMap.put("reservationList", new ReservationListController());
-//
-//
-//
-//
-//
+
 //        // 예약문자 진행
 //        controllerMap.put("reservationSmsSend", new ReservationSmsController());
     }

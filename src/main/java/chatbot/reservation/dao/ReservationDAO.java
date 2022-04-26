@@ -1,70 +1,51 @@
 package chatbot.reservation.dao;
 
+import chatbot.common.DBConnect;
 import chatbot.common.StoreDTO;
+import chatbot.reservation.dto.AbleInfoDTO;
 import chatbot.reservation.dto.ReservationInfoDTO;
 
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
+import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
 
 public class ReservationDAO {
+
+    final private DBConnect db;
+
+    public ReservationDAO() {
+        db = DBConnect.getInstance();
+        con = db.getConnection();
+    }
+
+
     private String sql = "";
     private PreparedStatement ps = null;
     private Connection con = null;
     private ResultSet rs = null;
 
-    public ReservationDAO(){
+//    public ReservationDAO(){
 //        String url = "jdbc:oracle:thin:@localhost:1521:xe";
-        String url = "jdbc:oracle:thin:@211.204.195.197:11521:direadb";
-        String user = "chatbot";
-        String password = "chatbot";
-        try {
-            Class.forName("oracle.jdbc.driver.OracleDriver");
-            con = DriverManager.getConnection(url, user, password);
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-    }
+//        String user = "chatbot";
+//        String password = "chatbot";
+//        try {
+//            Class.forName("oracle.jdbc.driver.OracleDriver");
+//            con = DriverManager.getConnection(url, user, password);
+//        } catch (Exception e) {
+//            e.printStackTrace();
+//        }
+//    }
 
-    public List<ReservationInfoDTO> reservationInfoAll(){
-        List<ReservationInfoDTO> resListDto = new ArrayList<>();
-        ReservationInfoDTO resDto = new ReservationInfoDTO();
-        int result = 0;
-        sql ="SELECT * FROM RESERVATIONINFO";
-        try {
-            ps = con.prepareStatement(sql);
-            rs = ps.executeQuery();
-            while(rs.next()){
-                resDto.setRespeople(rs.getString("respeople"));
-                resDto.setResdate(String.valueOf(rs.getDate("resdate")));
-                resListDto.add(resDto);
-            }
-        }catch (Exception e){
-            e.printStackTrace();
-        }finally {
-            try{
-                if(rs!=null) rs.close();
-                if(ps!=null) ps.close();
-            }catch (Exception e){
-                e.printStackTrace();
-            }
-        }
-        return resListDto;
-    }
 
     public List<StoreDTO> storeAll(){
         List<StoreDTO> storeListDto = new ArrayList<>();
-        StoreDTO storeDto = new StoreDTO();
-        int result = 0;
         sql ="SELECT * FROM STORE";
         try {
             ps = con.prepareStatement(sql);
             rs = ps.executeQuery();
-            while(rs.next()){
+            while(rs.next()) {
+                StoreDTO storeDto = new StoreDTO();
                 storeDto.setStno(rs.getString("stno"));
                 storeDto.setStName(rs.getString("stname"));
                 storeListDto.add(storeDto);
@@ -82,20 +63,20 @@ public class ReservationDAO {
         return storeListDto;
     }
 
-
-    public List<ReservationInfoDTO> reservationInfoSelect(String stNo) {
-        List<ReservationInfoDTO> storeListDto = new ArrayList<>();
-        ReservationInfoDTO resDto = new ReservationInfoDTO();
-        int result = 0;
-        sql ="SELECT * FROM RESERVATIONINFO WHERE = ? ORDER BY resdate";
+    public List<AbleInfoDTO> ableInfoSelectAll(String getStno){
+        List<AbleInfoDTO> ableListDto = new ArrayList<>();
+        sql ="SELECT * FROM ABLEINFO WHERE stno=? ORDER BY stno, abtime";
         try {
             ps = con.prepareStatement(sql);
-            ps.setString(1, stNo);
+            ps.setString(1, getStno);
             rs = ps.executeQuery();
-            while(rs.next()){
-                resDto.setResdate(String.valueOf(rs.getDate("resdate")));
-                resDto.setRespeople(rs.getString("respeople"));
-                storeListDto.add(resDto);
+
+            while(rs.next()) {
+                AbleInfoDTO ableDto = new AbleInfoDTO();
+                ableDto.setStno(rs.getString("stno"));
+                ableDto.setAbTime(rs.getInt("abtime"));
+                ableDto.setAbPeople(rs.getInt("abpeople"));
+                ableListDto.add(ableDto);
             }
         }catch (Exception e){
             e.printStackTrace();
@@ -107,15 +88,102 @@ public class ReservationDAO {
                 e.printStackTrace();
             }
         }
-        return storeListDto;
+        return ableListDto;
     }
 
+    public AbleInfoDTO ableInfoSelect(String getStno, String getTime) {
+        AbleInfoDTO ableDto = new AbleInfoDTO();
+        sql ="SELECT * FROM ABLEINFO WHERE stno = ? and abtime = ? ";
+        try {
+            ps = con.prepareStatement(sql);
+            ps.setString(1, getStno);
+            ps.setString(2, getTime);
+            rs = ps.executeQuery();
+            if(rs.next()){
+                ableDto.setAbTime(rs.getInt("abtime"));
+                ableDto.setAbPeople(rs.getInt("abpeople"));
+            }
+        }catch (Exception e){
+            e.printStackTrace();
+        }finally {
+            try{
+                if(rs!=null) rs.close();
+                if(ps!=null) ps.close();
+            }catch (Exception e){
+                e.printStackTrace();
+            }
+        }
+        return ableDto;
+    }
 
+    public int updateAbleInfo(String getStno,String strReqeustTime,String strNewAbPeople) {
+        AbleInfoDTO ableDto = new AbleInfoDTO();
+        sql ="UPDATE ABLEINFO SET abtime=?, abpeople=? WHERE stno=? AND abtime=?";
+        int result = 0;
+        try {
+            ps = con.prepareStatement(sql);
+            ps.setString(1, strReqeustTime);
+            ps.setString(2, strNewAbPeople);
+            ps.setString(3, getStno);
+            ps.setString(4, strReqeustTime);
+            result = ps.executeUpdate();
+        }catch (Exception e){
+            e.printStackTrace();
+        }finally {
+            try{
+                if(rs!=null) rs.close();
+                if(ps!=null) ps.close();
+            }catch (Exception e){
+                e.printStackTrace();
+            }
+        }
+        return result;
+    }
 
-//    public List<ReservationInfoDTO> ScheduleAll(String storeName) {
-//        List<ReservationInfoDTO> resListDto = new ArrayList<>();
-//
-//
-//        return resListDto;
-//    }
+    public int insertResInfo(String mno, String stno, String resPeople, String sqlDate) {
+        AbleInfoDTO ableDto = new AbleInfoDTO();
+        sql ="INSERT INTO RESERVATIONINFO VALUES(?,?,?,?,RESERVATION_RESNO_SEQ.nextval)";
+        int result = 0;
+        try {
+            ps = con.prepareStatement(sql);
+            ps.setString(1, sqlDate);
+            ps.setString(2, resPeople);
+            ps.setString(3, stno);
+            ps.setString(4, mno);
+            result = ps.executeUpdate();
+        }catch (Exception e){
+            e.printStackTrace();
+        }finally {
+            try{
+                if(rs!=null) rs.close();
+                if(ps!=null) ps.close();
+            }catch (Exception e){
+                e.printStackTrace();
+            }
+        }
+        return result;
+    }
+
+    public StoreDTO storeSelectOne(String stno) {
+        StoreDTO stoDto = new StoreDTO();
+        sql ="SELECT * FROM STORE WHERE stno=?";
+        try {
+            ps = con.prepareStatement(sql);
+            ps.setString(1, stno);
+            rs = ps.executeQuery();
+            if(rs.next()){
+                stoDto.setStName(rs.getString("stname"));
+            }
+        }catch (Exception e){
+            e.printStackTrace();
+        }finally {
+            try{
+                if(rs!=null) rs.close();
+                if(ps!=null) ps.close();
+            }catch (Exception e){
+                e.printStackTrace();
+            }
+        }
+        return stoDto;
+    }
 }

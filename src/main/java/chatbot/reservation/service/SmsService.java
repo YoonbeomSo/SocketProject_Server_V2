@@ -52,7 +52,7 @@ public class SmsService {
                 .append("\n[").append(reservation.getStname()).append("]")
                 .append("\n예약자명: ").append(member.getName())
                 .append("\n예약시간: ").append(reservation.getRestime())
-                .append("\n예약인원: ").append(reservation.getRespeople())
+                .append("\n예약인원: ").append(reservation.getResPeople())
                 .toString();
 
         toJson.put("subject", "");                    // 메시지 제목 * LMS Type에서만 사용할 수 있습니다.

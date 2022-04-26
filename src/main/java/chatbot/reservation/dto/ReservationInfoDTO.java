@@ -3,8 +3,8 @@ package chatbot.reservation.dto;
 
 
 public class ReservationInfoDTO {
-    private String resdate;
-    private String respeople;
+    private String resDate;
+    private String resPeople;
     private String mno;
     private String resno;
     private String stno;
@@ -14,9 +14,9 @@ public class ReservationInfoDTO {
     public ReservationInfoDTO() {
     }
 
-    public ReservationInfoDTO(String resdate, String respeople, String mno, String resno, String stno, String stname, String restime) {
-        this.resdate = resdate;
-        this.respeople = respeople;
+    public ReservationInfoDTO(String resDate, String resPeople, String mno, String resno, String stno, String stname, String restime) {
+        this.resDate = resDate;
+        this.resPeople = resPeople;
         this.mno = mno;
         this.resno = resno;
         this.stno = stno;
@@ -24,20 +24,20 @@ public class ReservationInfoDTO {
         this.restime = restime;
     }
 
-    public String getResdate() {
-        return resdate;
+    public String getResDate() {
+        return resDate;
     }
 
-    public void setResdate(String resdate) {
-        this.resdate = resdate;
+    public void setResDate(String resDate) {
+        this.resDate = resDate;
     }
 
-    public String getRespeople() {
-        return respeople;
+    public String getResPeople() {
+        return resPeople;
     }
 
-    public void setRespeople(String respeople) {
-        this.respeople = respeople;
+    public void setResPeople(String resPeople) {
+        this.resPeople = resPeople;
     }
 
     public String getMno() {
@@ -83,8 +83,8 @@ public class ReservationInfoDTO {
     @Override
     public String toString() {
         return "ReservationInfoDTO{" +
-                "resdate='" + resdate + '\'' +
-                ", respeople='" + respeople + '\'' +
+                "resdate='" + resDate + '\'' +
+                ", respeople='" + resPeople + '\'' +
                 ", mno='" + mno + '\'' +
                 ", resno='" + resno + '\'' +
                 ", stno='" + stno + '\'' +

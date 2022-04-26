@@ -30,4 +30,5 @@ public class StoreDTO {
     public void setStName(String stName) {
         this.stName = stName;
     }
+
 }

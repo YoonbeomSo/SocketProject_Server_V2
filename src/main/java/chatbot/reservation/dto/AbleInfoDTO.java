@@ -2,13 +2,17 @@ package chatbot.reservation.dto;
 
 public class AbleInfoDTO {
     private String stno;
-    private String abTime;
-    private String abPeople;
+    private int abTime;
+    private int abPeople;
 
-    public AbleInfoDTO(String stno, String abTime, String abPeople) {
+    public AbleInfoDTO(String stno, int abTime, int abPeople) {
         this.stno = stno;
         this.abTime = abTime;
         this.abPeople = abPeople;
+    }
+
+    public AbleInfoDTO() {
+
     }
 
     public String getStno() {
@@ -19,19 +23,22 @@ public class AbleInfoDTO {
         this.stno = stno;
     }
 
-    public String getAbTime() {
+    public int getAbTime() {
         return abTime;
     }
 
-    public void setAbTime(String abTime) {
+    public void setAbTime(int abTime) {
         this.abTime = abTime;
     }
 
-    public String getAbPeople() {
+    public int getAbPeople() {
         return abPeople;
     }
 
-    public void setAbPeople(String abPeople) {
+    public void setAbPeople(int abPeople) {
         this.abPeople = abPeople;
     }
 }
+
+
+
