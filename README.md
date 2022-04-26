@@ -25,11 +25,10 @@
         "name" :  "data",
         "mobile" :  "data"
       },
-      "reservation" : {
-          "data" :  "data",
-          "resPeople" : "data",
-          "stno" :  "data",
-          "mno" : "data"
+      "reservationInfo" : {
+        "stno" : "data",
+        "abtime" : "data",
+        "abpeople" : "data"
       },
       "render" : {
           "1" : "로그인",
