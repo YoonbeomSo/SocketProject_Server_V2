@@ -94,6 +94,13 @@ public class ChatbotServerThread extends Thread {
                 }
 
                 String screenName = controller.process(model);
+
+                String forward = (String) model.get("forward");
+                if (forward != null) {
+                    controller = controllerMap.get(forward);
+                    screenName = controller.process(model);
+                }
+
                 System.out.println("ChatbotServerThread.run");
                 logger.debug("screenName : {}", screenName);
                 model.forEach((key, value) -> logger.debug(key + " : " + value));

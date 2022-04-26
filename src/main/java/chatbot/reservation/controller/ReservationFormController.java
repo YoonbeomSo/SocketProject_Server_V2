@@ -18,7 +18,7 @@ public class ReservationFormController implements Controller {
         Map<String, String> render = new HashMap<>();
 
         for(ReservationInfoDTO resDto : resListDto) {
-            if(resDto.getErrorMSG().isEmpty()){
+            if(resDto.getErrorMSG()!=null){
                 model.put("errorMessage", "에러발생 : 식당을 등록해주세요");
             }else {
                 render.put(resDto.getStno(),resDto.getResPeople());

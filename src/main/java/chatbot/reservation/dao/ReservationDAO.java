@@ -18,7 +18,8 @@ public class ReservationDAO {
     private ResultSet rs = null;
 
     public ReservationDAO(){
-        String url = "jdbc:oracle:thin:@localhost:1521:xe";
+//        String url = "jdbc:oracle:thin:@localhost:1521:xe";
+        String url = "jdbc:oracle:thin:@211.204.195.197:11521:direadb";
         String user = "chatbot";
         String password = "chatbot";
         try {

@@ -6,4 +6,6 @@ public interface Dao {
 
     void save(MemberDTO member);
 
+    MemberDTO findMemberbyId(String id);
+
 }
