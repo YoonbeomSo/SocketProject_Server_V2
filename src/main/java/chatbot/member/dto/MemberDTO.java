@@ -58,4 +58,15 @@ public class MemberDTO {
     public void setMobile(String mobile) {
         this.mobile = mobile;
     }
+
+    @Override
+    public String toString() {
+        return "MemberDTO{" +
+                "mno=" + mno +
+                ", id='" + id + '\'' +
+                ", password='" + password + '\'' +
+                ", name='" + name + '\'' +
+                ", mobile='" + mobile + '\'' +
+                '}';
+    }
 }
