@@ -47,15 +47,20 @@ public class ChatbotServerThread extends Thread {
         // 1. 아이디, 2. 비밀번호 차례로 입력 했을 때
         controllerMap.put("memberLogin", new MemberLoginController());
 
-
+        // admin 으로 로그인했을때 관리자기능
         controllerMap.put("adminForm", new AdminFormController());
-
+        // 클라이언트가 목록조회를 요청 시
         controllerMap.put("lookStore", new LookStoreController());
+        // 클라이언트가 신규가게 추가 요청 시
         controllerMap.put("addStoreForm", new AddStoreFormController());
-        controllerMap.put("deleteStore", new DeleteStoreController());
-        controllerMap.put("addStore", new AddStoreController());
-        controllerMap.put("addStoreInfo", new AddStoreInfoController());
+        // 클라이언트가 기존가게 삭제 요청 시
         controllerMap.put("deleteStoreForm", new DeleteStoreFormController());
+        // 클라이언트가 추가 요청 후 신규가게명 입력 시
+        controllerMap.put("addStore", new AddStoreController());
+        // 클라이언트가 삭제 요청 후 기존가게명을 입력시
+        controllerMap.put("deleteStore", new DeleteStoreController());
+        // 클라이언트가 신규 가게명을 입력 후 추가 정보를 입력 시
+        controllerMap.put("addStoreInfo", new AddStoreInfoController());
 
         // 클라이언트 로그인 완료 시 식당목록 보여줌
         controllerMap.put("reservationForm", new ReservationFormController());
