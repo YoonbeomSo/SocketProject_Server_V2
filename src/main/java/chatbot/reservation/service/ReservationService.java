@@ -1,9 +1,11 @@
 package chatbot.reservation.service;
 
 import chatbot.common.StoreDTO;
+import chatbot.member.dto.MemberDTO;
 import chatbot.reservation.dao.ReservationDAO;
 import chatbot.reservation.dto.AbleInfoDTO;
 import chatbot.reservation.dto.ReservationInfoDTO;
+import com.google.gson.Gson;
 
 import java.sql.Date;
 import java.sql.Timestamp;
@@ -104,8 +106,11 @@ public class ReservationService {
 
         int result=0;
         //MNO
-        Map<String, String> memData = (Map<String, String>)model.get("member");
-        String mno = memData.get("mno");
+        Gson gson = new Gson();
+        MemberDTO memData = gson.fromJson((String) model.get("member"), MemberDTO.class);
+
+//        Map<Object, Object> memData = (Map<Object, Object>)model.get("member");
+        String mno = String.valueOf(memData.getMno());
 //        String mno = "1";
         //STNO
         Map<String, String> resData = (Map<String, String>)model.get("reservationInfo");
