@@ -1,47 +1,43 @@
 package chatbot.reservation.dto;
 
-import java.sql.Date;
+
 
 public class ReservationInfoDTO {
-    private Date resDate;
-    private String resPeople;
-    private String stno;
+    private String resdate;
+    private String respeople;
     private String mno;
-    private String errorMSG;
-
+    private String resno;
+    private String stno;
+    private String stname;
+    private String restime;
 
     public ReservationInfoDTO() {
     }
 
-    public ReservationInfoDTO(Date resDate, String resPeople, String stno, String mno) {
-        this.resDate = resDate;
-        this.resPeople = resPeople;
-        this.stno = stno;
+    public ReservationInfoDTO(String resdate, String respeople, String mno, String resno, String stno, String stname, String restime) {
+        this.resdate = resdate;
+        this.respeople = respeople;
         this.mno = mno;
-    }
-
-    public Date getResDate() {
-        return resDate;
-    }
-
-    public void setResDate(Date resDate) {
-        this.resDate = resDate;
-    }
-
-    public String getResPeople() {
-        return resPeople;
-    }
-
-    public void setResPeople(String resPeople) {
-        this.resPeople = resPeople;
-    }
-
-    public String getStno() {
-        return stno;
-    }
-
-    public void setStno(String stno) {
+        this.resno = resno;
         this.stno = stno;
+        this.stname = stname;
+        this.restime = restime;
+    }
+
+    public String getResdate() {
+        return resdate;
+    }
+
+    public void setResdate(String resdate) {
+        this.resdate = resdate;
+    }
+
+    public String getRespeople() {
+        return respeople;
+    }
+
+    public void setRespeople(String respeople) {
+        this.respeople = respeople;
     }
 
     public String getMno() {
@@ -52,7 +48,48 @@ public class ReservationInfoDTO {
         this.mno = mno;
     }
 
-    public void setErrorMSG(String errorMSG) {this.errorMSG = errorMSG;}
+    public String getResno() {
+        return resno;
+    }
 
-    public String getErrorMSG() {return errorMSG;}
+    public void setResno(String resno) {
+        this.resno = resno;
+    }
+
+    public String getStno() {
+        return stno;
+    }
+
+    public void setStno(String stno) {
+        this.stno = stno;
+    }
+
+    public String getStname() {
+        return stname;
+    }
+
+    public void setStname(String stname) {
+        this.stname = stname;
+    }
+
+    public String getRestime() {
+        return restime;
+    }
+
+    public void setRestime(String restime) {
+        this.restime = restime;
+    }
+
+    @Override
+    public String toString() {
+        return "ReservationInfoDTO{" +
+                "resdate='" + resdate + '\'' +
+                ", respeople='" + respeople + '\'' +
+                ", mno='" + mno + '\'' +
+                ", resno='" + resno + '\'' +
+                ", stno='" + stno + '\'' +
+                ", stname='" + stname + '\'' +
+                ", restime='" + restime + '\'' +
+                '}';
+    }
 }

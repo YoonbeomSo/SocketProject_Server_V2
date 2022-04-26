@@ -13,22 +13,6 @@ public class MemberService implements Service {
         this.memberDao = memberDao;
     }
 
-//    @Override
-//    public void join(Map<String, Object> model) {
-//        Gson gson = new Gson();
-//        Map<String, String> requestParamMap = (Map<String, String>) model.get("requestParam");
-//
-//        MemberDTO member = new MemberDTO();
-//        member.setId(requestParamMap.get("id"));
-//        member.setPassword(requestParamMap.get("password"));
-//        member.setName(requestParamMap.get("name"));
-//        member.setMobile(requestParamMap.get("mobile"));
-//
-//        System.out.println("member.toString() = " + member.toString());
-//
-//        memberDao.save(member);
-//    }
-
     @Override
     public boolean join(Map<String, Object> model) {
         Gson gson = new Gson();
@@ -50,8 +34,6 @@ public class MemberService implements Service {
         memberDao.save(member);
         return true;
     }
-
-
 
     @Override
     public boolean login(Map<String, Object> model) {

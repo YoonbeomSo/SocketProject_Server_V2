@@ -39,8 +39,8 @@ public class ReservationDAO {
             ps = con.prepareStatement(sql);
             rs = ps.executeQuery();
             while(rs.next()){
-                resDto.setResPeople(rs.getString("respeople"));
-                resDto.setResDate(rs.getDate("resdate"));
+                resDto.setRespeople(rs.getString("respeople"));
+                resDto.setResdate(String.valueOf(rs.getDate("resdate")));
                 resListDto.add(resDto);
             }
         }catch (Exception e){
@@ -93,8 +93,8 @@ public class ReservationDAO {
             ps.setString(1, stNo);
             rs = ps.executeQuery();
             while(rs.next()){
-                resDto.setResDate(rs.getDate("resdate"));
-                resDto.setResPeople(rs.getString("respeople"));
+                resDto.setResdate(String.valueOf(rs.getDate("resdate")));
+                resDto.setRespeople(rs.getString("respeople"));
                 storeListDto.add(resDto);
             }
         }catch (Exception e){

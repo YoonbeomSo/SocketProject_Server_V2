@@ -17,7 +17,14 @@ public class MemberLoginController implements Controller {
 
         Map<String, String> render = new HashMap<>();
 
-        if (isLogined) {
+        Map<String, String> requestParamMap = (Map<String, String>) model.get("requestParam");
+        String requestId = requestParamMap.get("id");
+
+        if (requestId.equals("admin") && isLogined) {
+            model.put("successMessage", "Admin 로그인 되었습니다");
+            model.put("forward", "adminForm");
+
+        } else if (isLogined) {
             model.put("successMessage", "로그인 되었습니다");
             model.remove("errorMessage");
             model.put("forward", "reservationForm");

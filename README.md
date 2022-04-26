@@ -26,9 +26,13 @@
         "mobile" :  "data"
       },
       "reservationInfo" : {
-        "stno" : "data",
-        "abtime" : "data",
-        "abpeople" : "data"
+        "resno" : "data",
+        "resdate" : "data",
+        "respeople" : "data",
+        "mno" : "data",
+        "stno" :  "data",
+        "stname" : "data",
+        "restime" :  "data"
       },
       "render" : {
           "1" : "로그인",

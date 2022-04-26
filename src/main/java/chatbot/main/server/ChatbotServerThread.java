@@ -1,10 +1,12 @@
 package chatbot.main.server;
 
+import chatbot.admin.controller.*;
 import chatbot.common.Screen;
 import chatbot.main.controller.Controller;
 import chatbot.member.controller.*;
-import chatbot.reservation.controller.ReservationFormController;
-import chatbot.reservation.controller.ReservationListController;
+//import chatbot.reservation.controller.ReservationFormController;
+//import chatbot.reservation.controller.ReservationListController;
+//import chatbot.reservation.controller.ReservationSmsController;
 import com.google.gson.Gson;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonParser;
@@ -40,15 +42,33 @@ public class ChatbotServerThread extends Thread {
         // 1. 아이디, 2. 비밀번호, 3. 이름, 4. 핸드폰번호 차례로 입력 했을 때
         controllerMap.put("memberJoin", new MemberJoinController());
 
-        // TODO 클라이언트가 로그인 진행 시 로그인 로직 처리해야 함
+        // 클라이언트가 로그인 진행 시
+        // 1. 아이디, 2. 비밀번호 차례로 입력 했을 때
         controllerMap.put("memberLogin", new MemberLoginController());
 
 
-        // 클라이언트 로그인 완료 시 식당목록 보여줌
-        controllerMap.put("reservationForm", new ReservationFormController());
+        controllerMap.put("adminForm", new AdminFormController());
 
-        // 클라이언트가 식당 선택 시 시간 및 인원 보여줌
-        controllerMap.put("reservationList", new ReservationListController());
+        controllerMap.put("lookStore", new LookStoreController());
+        controllerMap.put("addStoreForm", new AddStoreFormController());
+        controllerMap.put("deleteStore", new DeleteStoreController());
+        controllerMap.put("addStore", new AddStoreController());
+        controllerMap.put("addStoreInfo", new AddStoreInfoController());
+        controllerMap.put("deleteStoreForm", new DeleteStoreFormController());
+
+
+//        // 클라이언트 로그인 완료 시 식당목록 보여줌
+//        controllerMap.put("reservationForm", new ReservationFormController());
+//
+//        // 클라이언트가 식당 선택 시 시간 및 인원 보여줌
+//        controllerMap.put("reservationList", new ReservationListController());
+//
+//
+//
+//
+//
+//        // 예약문자 진행
+//        controllerMap.put("reservationSmsSend", new ReservationSmsController());
     }
 
     @Override
@@ -59,13 +79,11 @@ public class ChatbotServerThread extends Thread {
 
             while (true) {
                 String receivedJsonString = br.readLine();
-                System.out.println("ChatbotServerThread.run");
                 logger.debug("receivedJsonString : {}", receivedJsonString);
                 Gson gson = new Gson();
 
                 JsonElement element = JsonParser.parseString(receivedJsonString);
                 if (!element.isJsonObject()) {
-                    System.out.println("ChatbotServerThread.run");
                     logger.error("올바르지 않은 json 형식 : {}", receivedJsonString);
                     pw.println("올바른 Json 형식이 아닙니다. - " + receivedJsonString);
                     pw.flush();
@@ -101,7 +119,6 @@ public class ChatbotServerThread extends Thread {
                     screenName = controller.process(model);
                 }
 
-                System.out.println("ChatbotServerThread.run");
                 logger.debug("screenName : {}", screenName);
                 model.forEach((key, value) -> logger.debug(key + " : " + value));
 

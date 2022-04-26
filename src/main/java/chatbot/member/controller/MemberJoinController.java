@@ -4,7 +4,6 @@ import chatbot.main.controller.Controller;
 import chatbot.member.dao.MemberDao;
 import chatbot.member.service.MemberService;
 
-import java.util.HashMap;
 import java.util.Map;
 
 // 회원가입 컨트롤러
@@ -14,7 +13,6 @@ public class MemberJoinController implements Controller {
     public String process(Map<String, Object> model) {
 
         MemberService memberService = new MemberService(new MemberDao());
-        Map<String, String> render = new HashMap<>();
 
         boolean isJoined = memberService.join(model);
         if (isJoined) {
