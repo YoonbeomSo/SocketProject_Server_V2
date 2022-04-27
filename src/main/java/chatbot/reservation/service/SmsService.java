@@ -51,7 +51,7 @@ public class SmsService {
                 .append("\n예약완료")
                 .append("\n[").append(reservation.getStname()).append("]")
                 .append("\n예약자명: ").append(member.getName())
-                .append("\n예약시간: ").append(reservation.getRestime())
+                .append("\n예약시간: ").append(reservation.getResDate()).append("시")
                 .append("\n예약인원: ").append(reservation.getResPeople())
                 .toString();
 
@@ -76,7 +76,12 @@ public class SmsService {
     public int smsSend(Map<String, Object> model) {
 
         MemberDTO member = gson.fromJson((String) model.get("member"), MemberDTO.class);
-        ReservationInfoDTO reservation = gson.fromJson((String) model.get("member"), ReservationInfoDTO.class);
+        Map<String, String> reservationData = (Map<String, String>) model.get("reservationInfo");
+
+        ReservationInfoDTO reservation = new ReservationInfoDTO();
+        reservation.setStname(reservationData.get("stname"));
+        reservation.setResDate(reservationData.get("resdate"));
+        reservation.setResPeople(reservationData.get("respeople"));
 
         int responseCode = 0;
         try {
